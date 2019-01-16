@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>BDE du CESI de Bordeaux</title>
+	</head>
+	<body>
+		<header>
+
+		</header>
+
+
+<main>
+
+</main>
+
+
+	<footer>
+
+	</footer>
+	</body>
+</html>
