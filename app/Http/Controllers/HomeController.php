@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('connected');
     }
+
+		public function getHome()
+		{
+				return view('page/home');
+		}
 }
