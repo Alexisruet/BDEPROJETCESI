@@ -8,7 +8,35 @@
 </head>
 	<body>
 		<header>
-			@yield('header')
+			<nav class="navbar fixed-top navbar-expand-md" id="navbar1">
+				<div class="container">
+					<a class="navbar-brand js-scroll-trigger" href="./index.html">
+						<img src="img/logoCesi.png" alt="logo">
+					</a>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+						&#9776;
+					</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link js-scroll-trigger" href="#">Membres du BDE </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link js-scroll-trigger" href="#">Événements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link js-scroll-trigger" href="#">Boîte à idées </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link js-scroll-trigger" href="#">Boutique </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link js-scroll-trigger" href="#">Contact </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 
 		<main>
