@@ -8,10 +8,10 @@
 </head>
 	<body>
 		<header>
-			<nav class="navbar fixed-top navbar-expand-md" id="navbar1">
+			<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="navbar1">
 				<div class="container">
 					<a class="navbar-brand js-scroll-trigger" href="./index.html">
-						<img src="img/logoCesi.png" alt="logo">
+						<img src="img/logo_moodle.png" alt="logo">
 					</a>
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 						&#9776;
