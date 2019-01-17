@@ -40,10 +40,16 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="centre" class="col-md-4 col-form-label text-md-right">{{ __('Centre') }}</label>
+                            <label for="centre" class="col-md-4 col-form-label text-md-right{{ $errors->has('centre') ? ' is-invalid' : '' }}">{{ __('Centre') }}</label>
 
                             <div class="col-md-6">
                                 <input id="centre" type="text" class="form-control" name="centre" required>
+
+                                @if ($errors->has('centre'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('centre') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 
