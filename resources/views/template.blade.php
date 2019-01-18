@@ -23,7 +23,7 @@
 		<header>
 			<nav class="navbar navbar-expand-md" id="navbar1">
 				<a class="navbar-brand js-scroll-trigger" href="/">
-					<img src="img/logo_cesi.png" alt="logo">
+					<img src="img/lillogo_swag.png" alt="logo">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 					&#9776;

@@ -16,25 +16,20 @@
     color: grey;
 }
 
-<<<<<<< HEAD
-#lign {
-    color: #6D89D5;
-    background-color: #6D89D5;
+<<<<<<< HEAD .foot {
+    width: 50%;
 }
 
-.foot{
-	width: 50%;
+.itemFoot {
+    font-size: 80%;
 }
 
-.itemFoot{
-	font-size: 80%;
+.foot-link {
+    margin-left: 100px;
 }
 
-.foot-link{
-	margin-left: 100px;
-}
-=======
-html {
+=======html {
     background-color: white;
 }
->>>>>>> 1136d6f28133a748bb253a0ed07347ee78bd226d
+
+>>>>>>>1136d6f28133a748bb253a0ed07347ee78bd226d
