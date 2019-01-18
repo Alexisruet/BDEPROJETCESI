@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+#navbar2 {
+    background-color: black;
+}
+
 #navbar1 .navbar-nav .nav-item .nav-link {
     color: white;
     font-family: Montserrat, Calibri;
@@ -14,4 +18,16 @@ html {
 #lign {
     color: #6D89D5;
     background-color: #6D89D5;
+}
+
+.foot{
+	width: 50%;
+}
+
+.itemFoot{
+	font-size: 80%;
+}
+
+.foot-link{
+	margin-left: 100px;
 }
