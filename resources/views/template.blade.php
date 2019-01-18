@@ -5,8 +5,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="icon" type="image" href="img/logo_top.png">
 
 	<script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -24,10 +25,10 @@
 				<a class="navbar-brand js-scroll-trigger" href="/">
 					<img src="img/logo_cesi.png" alt="logo">
 				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					&#9776;
+				</button>
 				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-						&#9776;
-					</button>
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -79,7 +80,6 @@
 					</div>
 				</div>
 			</nav>
-			<div class="card-header" id="lign"></div>
 		</header>
 
 		<main>
