@@ -13,8 +13,7 @@ class IdeaBoxController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $idea_boxes = IdeaBox::all();
-        //return view('idea', compact($idea_boxes));
+
 }
 
     /**
