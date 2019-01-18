@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="icon" type="image" href="img/logo_top.png">
 
 	<script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -79,7 +80,6 @@
 					</div>
 				</div>
 			</nav>
-			<div class="card-header" id="lign"></div>
 		</header>
 
 		<main>
