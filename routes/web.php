@@ -1,5 +1,6 @@
 <?php
 
+use App\IdeaBox;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,7 +20,14 @@ Route::get('/idea', function () {
     return view('page/createidea');
 });
 
+Route::get('/ideas', function () {
+    $data["idea_boxes"] = IdeaBox::all();
+    return view('page/idea', $data);
+});
+
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('connected');
 Route::post('/idea', 'IdeaBoxController@create')->name('createIdea');
