@@ -5,13 +5,13 @@
 
 #navbar1 .navbar-nav .nav-item .nav-link {
     color: white;
-    font-family: Montserrat;
+    font-family: Cantarell;
+}
+
+.navbar-toggler {
+    color: grey;
 }
 
 html {
     background-color: white;
-}
-
-#lign {
-    background-color: #6D89D5;
 }
