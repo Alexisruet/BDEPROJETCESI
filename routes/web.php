@@ -22,7 +22,7 @@ Route::get('/idea', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('connected');
-//Route::resource('/idea', 'IdeaBoxController@create');
+//Route::get('/idea', 'IdeaBoxController@create')->name('createIdea');
 
 
 Route::middleware(['admin'])->group(function(){

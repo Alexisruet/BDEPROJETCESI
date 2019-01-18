@@ -21,10 +21,19 @@ class IdeaBoxController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(array $data)
     {
-        
+        return User::create([
+            'title' => $data['title'],
+            'content' => $data['content'],
+
+        ]);
     }
+
+    /*public function create()
+    {
+    }*/
+
 
     /**
      * Store a newly created resource in storage.
