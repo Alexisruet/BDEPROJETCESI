@@ -13,7 +13,7 @@ class Ideabox extends Migration
      */
     public function up()
     {
-        Schema::create('ideabox', function (Blueprint $table) {
+        Schema::create('idea_boxes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('content');

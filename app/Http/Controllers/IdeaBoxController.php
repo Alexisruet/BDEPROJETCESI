@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\IdeaBox;
 use Illuminate\Http\Request;
 
 class IdeaBoxController extends Controller
@@ -21,11 +22,16 @@ class IdeaBoxController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(array $data)
+    public function create(Request $request)
     {
-        return User::create([
+
+        $idea = New IdeaBox();
+        $idea::create([
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+        /*return IdeaBox::create([
             'title' => $data['title'],
-            'content' => $data['content'],
+            'content' => $data['content'],*/
 
         ]);
     }
