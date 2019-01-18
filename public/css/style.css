@@ -3,9 +3,15 @@
 }
 
 #navbar1 .navbar-nav .nav-item .nav-link {
-    color: #6D89D5;
+    color: white;
+    font-family: Montserrat, Calibri;
 }
 
 html {
-    background-color: black;
+    background-color: white;
+}
+
+#lign {
+    color: #6D89D5;
+    background-color: #6D89D5;
 }
