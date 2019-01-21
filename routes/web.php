@@ -13,8 +13,9 @@ use App\IdeaBox;
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('home');
 });
+
 
 Auth::routes();
 
@@ -38,7 +39,3 @@ Route::middleware(['admin'])->group(function(){
     Route::post('/addProduct', 'ProductController@create')->name('addProduct');
 
 });
-
-
-   
-

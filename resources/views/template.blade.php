@@ -32,16 +32,16 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="#">Membres du BDE </a>
+								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/bdemembers">Membres du BDE </a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="#">Événements</a>
+								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/events">Événements</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="#">Boîte à idées </a>
+								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">Boîte à idées </a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="#">Boutique </a>
+								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop">Boutique </a>
 							</li>
 							<li class="nav-item">
 								<p class="nav-link js-scroll-trigger" href="">&nbsp &nbsp &nbsp &nbsp</p>
