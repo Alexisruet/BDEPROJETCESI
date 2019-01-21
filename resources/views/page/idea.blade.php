@@ -3,19 +3,21 @@
 @section('main')
 
 <div class="container">
-    <h1 class="text-center">Hello</h1>
-    <div class="row espace">
+        <div class="row">
+            <div class="col s6">
+							@foreach ($idea_boxes as $idea)
+								 <div>
+											<div>
+													Nom de l'association : {{ $idea->title }}
+											</div>
 
-        @foreach ($idea_boxes as $idea)
-        <div class="idea">
-                <div> 
-                    Nom de l'association : {{ $idea->title }}
-                </div>
-                <div>
-                    Description : {{ $idea->content }}
-                </div>
-            </div> 
-        @endforeach
+											<div>
+													Description : {{ $idea->content }}
+											</div>
+									</div>
+							@endforeach
+            </div>
+        </div>
     </div>
-</div>
+
 @endsection
