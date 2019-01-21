@@ -1,5 +1,5 @@
 #navbar1 {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     border-bottom: 15px solid #6D89D5;
 }
 
@@ -11,6 +11,12 @@
     color: white;
     background:
         font-family: Cantarell;
+}
+
+.my-header img {
+    position: absolute;
+    z-index: -22;
+    top: 0;
 }
 
 .navbar-toggler {

@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('connected');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaBoxController@showIdeas')->name('showIdea');
 Route::get('/events', 'EventController@showEvents')->name('showEvent');
 

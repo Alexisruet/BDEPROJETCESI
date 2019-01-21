@@ -80,8 +80,8 @@
 					</div>
 				</div>
 			</nav>
+	@yield('background')
 		</header>
-
 		<main>
 			@yield('main')
 		</main>
