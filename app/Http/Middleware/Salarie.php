@@ -3,9 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Http\RedirectResponse;
 
-class Admin
+class Salarie
 {
     /**
      * Handle an incoming request.
@@ -18,7 +17,7 @@ class Admin
     {
         $user = $request->user();
  
-        if ($user && $user->Admin())
+        if ($user && $user->Salarie())
         {
             return $next($request);
         }

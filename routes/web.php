@@ -34,8 +34,8 @@ Route::middleware(['admin'])->group(function(){
 
 });
 
-Route::middleware(['salaries'])->group(function(){
-
+Route::middleware(['salarie'])->group(function(){
+    Route::get('/report', 'ReportController@index')->name('report');
 });
 
 
