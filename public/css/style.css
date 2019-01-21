@@ -1,5 +1,5 @@
 #navbar1 {
-    background-color: black;
+    background: rgba(0, 0, 0, 0.4);
     border-bottom: 15px solid #6D89D5;
 }
 
@@ -9,16 +9,12 @@
 
 #navbar1 .navbar-nav .nav-item .nav-link {
     color: white;
-    font-family: Cantarell;
+    background:
+        font-family: Cantarell;
 }
 
 .navbar-toggler {
     color: grey;
-}
-
-#lign {
-    color: #6D89D5;
-    background-color: #6D89D5;
 }
 
 .foot {

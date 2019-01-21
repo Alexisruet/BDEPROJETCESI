@@ -23,7 +23,7 @@
 		<header>
 			<nav class="navbar navbar-expand-md" id="navbar1">
 				<a class="navbar-brand js-scroll-trigger" href="/">
-					<img src="img/logo_cesi.png" alt="logo">
+					<img src="img/lillogo_swag.png" alt="logo">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 					&#9776;
@@ -87,9 +87,9 @@
 		</main>
 
 
-	<footer>
+	<footer  class="row">
 		<div class="col-lg-12">
-				<nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" id="navbar2">
+				<nav class="navbar navbar-expand-lg navbar-dark" id="navbar2">
 					<div class="container justify-content-center">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
