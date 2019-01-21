@@ -27,15 +27,16 @@ Route::middleware(['auth'])->group(function(){
 
 });
 
+Route::middleware(['salarie'])->group(function(){
+    Route::get('/report', 'ReportController@index')->name('report');
+});
+
 Route::middleware(['admin'])->group(function(){
     Route::get('/gestion', 'GestionController@index')->name('gestion');
+    Route::get('/report', 'ReportController@index')->name('report');
     Route::post('/addEvent', 'EventController@index')->name('addEvent');
     Route::post('/addProduct', 'ProductController@create')->name('addProduct');
 
-});
-
-Route::middleware(['salarie'])->group(function(){
-    Route::get('/report', 'ReportController@index')->name('report');
 });
 
 
