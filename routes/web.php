@@ -13,7 +13,7 @@ use App\IdeaBox;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('template');
 });
 
 
