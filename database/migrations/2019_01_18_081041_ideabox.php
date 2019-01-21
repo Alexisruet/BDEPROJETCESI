@@ -27,6 +27,6 @@ class Ideabox extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ideabox');
+        Schema::dropIfExists('idea_boxes');
     }
 }

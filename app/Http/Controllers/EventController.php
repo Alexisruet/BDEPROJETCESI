@@ -2,41 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\IdeaBox;
 use Illuminate\Http\Request;
 
-class IdeaBoxController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        return view('page/createidea');
-}
+    public function index()
+    {
+            return view('admin/event');
+    }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-
-        $idea = New IdeaBox();
-        $idea::create([
-            'title' => $request->input('title'),
-            'content' => $request->input('content')
-        ]);
+        //
     }
-
-    public function showIdeas(Request $request)
-    {
-        $data["idea_boxes"] = IdeaBox::all();
-        return view('page/idea', $data);
-    }
-
 
     /**
      * Store a newly created resource in storage.
