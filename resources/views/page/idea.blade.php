@@ -14,12 +14,7 @@
                 <div>
                     Description : {{ $idea->content }}
                 </div>
-            </div>
-            <div class="upload">
-            <input type="file"
-             id="photo" name="photo"
-                accept="image/png, image/jpeg">
-                </div>  
+            </div> 
         @endforeach
     </div>
 </div>
