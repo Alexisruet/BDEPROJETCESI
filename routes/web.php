@@ -29,8 +29,8 @@ Route::middleware(['auth'])->group(function(){
 
 Route::middleware(['admin'])->group(function(){
     Route::get('/gestion', 'GestionController@index')->name('gestion');
-    Route::get('/addEvent', 'EventController@index')->name('addEvent');
-    Route::post('/admin/addProduct', 'ProductController@create')->name('addProduct');
+    Route::post('/addEvent', 'EventController@index')->name('addEvent');
+    Route::post('/addProduct', 'ProductController@create')->name('addProduct');
 
 });
 
