@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('template')
 
-@section('content')
+@section('main')
 
-<h1>Hello</h1>
+<h1>Hello les events</h1>
 @endsection

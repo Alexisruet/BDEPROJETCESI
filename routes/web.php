@@ -13,7 +13,7 @@ use App\IdeaBox;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template');
 });
 
 Auth::routes();

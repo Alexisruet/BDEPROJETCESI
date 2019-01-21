@@ -1,0 +1,47 @@
+#navbar1 {
+    background-color: black;
+    border-bottom: 15px solid #6D89D5;
+}
+
+#navbar2 {
+    background-color: black;
+}
+
+#navbar1 .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-family: Cantarell;
+}
+
+.navbar-toggler {
+    color: grey;
+}
+
+#lign {
+    color: #6D89D5;
+    background-color: #6D89D5;
+}
+
+.foot{
+	width: 50%;
+}
+
+.itemFoot{
+	font-size: 80%;
+}
+
+.foot-link{
+	margin-left: 100px;
+}
+
+
+.espace {
+    margin-top: 50px;
+}
+
+.idea {
+    margin: auto;
+}
+
+.upload {
+    margin: auto;
+}
