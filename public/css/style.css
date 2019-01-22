@@ -9,7 +9,14 @@
 
 #navbar1 .navbar-nav .nav-item .nav-link {
     color: white;
+<<<<<<< HEAD
     font-family: Helvetica,Arial,sans-serif;
+=======
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2vmin;
+    border-left: 0.5px solid grey;
+>>>>>>> 658ececf546a959aa2387786d2ff78380e511260
 }
 
 #carouselExampleIndicators {
@@ -17,7 +24,25 @@
     z-index: -22;
     top: 0;
     width: 100%;
-    height: 850px;
+    height: 3000px;
+}
+
+.carousel-caption {
+    width: 40%;
+    margin: auto;
+    font text-align: center;
+    top: 50%;
+    transform: translateY(-70%);
+}
+
+#p1 {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 5vmin;
+}
+
+#item1 {
+    margin-left: 150px;
 }
 
 footer {

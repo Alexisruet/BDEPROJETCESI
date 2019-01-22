@@ -57,7 +57,7 @@
                             <label for="centre" class="col-md-4 col-form-label text-md-right">{{ __('Centre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="centre" type="text" class="form-control{{ $errors->has('centre') ? ' is-invalid' : '' }}" name="centre" value="{{ old('centre') }}" required autofocus>
+                                <input id="centre" type="text" class="form-control{{ $errors->has('centre') ? ' is-invalid' : '' }}" name="centre" value="{{ old('centre') }}"  autofocus>
 
                                 @if ($errors->has('centre'))
                                     <span class="invalid-feedback" role="alert">
