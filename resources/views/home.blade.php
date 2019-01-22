@@ -10,7 +10,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/2.jpg" alt="First slide">
+      <img class="d-block w-100" src="img/cc.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
         <h5>Bienvenue sur le site du BDE</h5>
         <p>Cesi de Bordeaux</p>
