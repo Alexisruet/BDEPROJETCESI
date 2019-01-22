@@ -68,8 +68,59 @@
 
 footer {
     background-color: black;
+    border-top: 15px solid #6D89D5;
 }
 
-.page-footer .col-md-6 {
+footer .col-md-6 {
     color: white;
+}
+
+footer .footer-copyright {
+    color: #606060;
+    height: 45px;
+}
+
+footer .footer-copyright a {
+    color: #606060;
+}
+
+footer .text-uppercase {
+    color: white;
+}
+
+footer .text-uppercase img {
+    height: 40px;
+    width: 40px;
+}
+
+footer a {
+    color: grey;
+}
+
+footer a:hover {
+    color: #6D89D5;
+}
+
+#logoInsta:hover {
+    color: #fbad50;
+}
+
+#logoTwitter:hover {
+    color: #00aced;
+}
+
+#logoFacebook:hover {
+    color: #3b5998;
+}
+
+#logoInsta, #logoFacebook {
+    margin-right: 30px;
+}
+
+#presBDE {
+    margin-top: 150px;
+}
+
+#presBDE h2 {
+    text-align: center;
 }

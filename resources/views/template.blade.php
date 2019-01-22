@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -80,24 +81,28 @@
 			</nav>
 		</header>
 		<main>
-				@yield('carousel')
+				@yield('main')
 		</main>
-		
+
 			<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">
 
 		<!-- Footer Links -->
-		<div class="container-fluid text-center text-md-left">
+		<div class="container-fluid text-center">
 
 			<!-- Grid row -->
 			<div class="row">
 
 				<!-- Grid column -->
-				<div class="col-md-6 mt-md-0 mt-3">
+				<div class="col-md-4 mb-md-0 md-4">
+					<div class="container" id="logos">
+						<!-- Content -->
+						<h5 class="text-uppercase">A propos</h5>
+						<a href="https://www.facebook.com/bde.cesibordeaux.9" id="logoFacebook"> <i class="fab fa-facebook fa-5x">  </i> </a>
+						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-5x">  </i> </a>
+						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-5x">  </i> </a>
 
-					<!-- Content -->
-					<h5 class="text-uppercase">Footer Content</h5>
-					<p>Here you can use rows and columns here to organize your footer content.</p>
+					</div>
 
 				</div>
 				<!-- Grid column -->
@@ -105,10 +110,10 @@
 				<hr class="clearfix w-100 d-md-none pb-3">
 
 				<!-- Grid column -->
-				<div class="col-md-3 mb-md-0 mb-3">
+				<div class="col-md-4 mb-md-0 md-4">
 
 						<!-- Links -->
-						<h5 class="text-uppercase">Links</h5>
+						<h5 class="text-uppercase"  id="TitleFooter">Contact</h5>
 
 						<ul class="list-unstyled">
 							<li>
@@ -117,50 +122,39 @@
 							<li>
 								<a href="#!">Link 2</a>
 							</li>
-							<li>
-								<a href="#!">Link 3</a>
-							</li>
-							<li>
-								<a href="#!">Link 4</a>
-							</li>
 						</ul>
 
 					</div>
 					<!-- Grid column -->
 
 					<!-- Grid column -->
-					<div class="col-md-3 mb-md-0 mb-3">
+					<div class="col-md-4 mb-md-0 md-4">
 
 						<!-- Links -->
-						<h5 class="text-uppercase">Links</h5>
+						<h5 class="text-uppercase" id="TitleFooter">Mentions légales</h5>
 
 						<ul class="list-unstyled">
 							<li>
-								<a href="#!">Link 1</a>
+								<a href="#!">RGPD</a>
 							</li>
 							<li>
-								<a href="#!">Link 2</a>
+								<a href="#!">Conditions générales</a>
 							</li>
 							<li>
-								<a href="#!">Link 3</a>
+								<a href="#!">Conditions de vente</a>
 							</li>
-							<li>
-								<a href="#!">Link 4</a>
-							</li>
-						</ul>
 
+						</ul>
 					</div>
 					<!-- Grid column -->
-
 			</div>
 			<!-- Grid row -->
-
 		</div>
 		<!-- Footer Links -->
 
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2018 Copyright:
-			<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+		<div class="footer-copyright text-center py-3">© 2018 Copyright :
+			<a href="https://malom.fr"> Malom.fr</a>
 		</div>
 		<!-- Copyright -->
 

@@ -1,11 +1,11 @@
 @extends('template')
 
-@section('carousel')
+@section('main')
 
 <div id="carouselExampleIndicators" class="carousel slide  carousel-fade" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/cc.jpg" alt="First slide">
+      <img class="d-block w-100" src="img/batC.jpg" alt="First slide">
       <div class="carousel-caption d-md-block">
         <p id="p1"> Bienvenue sur le site du BDE </br> CESI Bordeaux </p>
       </div>
@@ -24,6 +24,15 @@
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+<div class="container" id="presBDE">
+
+  <h2>Présentation du BDE </h2>
+  <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
+    lablablablablablablablablabla</p>
+
 </div>
 
 @endsection
