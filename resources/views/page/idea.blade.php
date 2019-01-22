@@ -5,7 +5,7 @@
 <div class="container">
         <div class="row">
             <div class="col s6">
-							@foreach ($idea_boxes as $idea)
+					@foreach ($idea_boxes as $idea)
 								 <div>
 											<div>
 													Nom de l'association : {{ $idea->title }}
@@ -15,7 +15,7 @@
 													Description : {{ $idea->content }}
 											</div>
 									</div>
-							@endforeach
+					@endforeach
             </div>
         </div>
     </div>
