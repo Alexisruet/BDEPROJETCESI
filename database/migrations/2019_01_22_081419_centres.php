@@ -14,7 +14,7 @@ class Centres extends Migration
     public function up()
     {
         Schema::create('centres', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('city');
     });
 }

@@ -13,8 +13,8 @@ class ProductCategories extends Migration
      */
     public function up()
     {
-        Schema::create('products_categories', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('product_categories', function (Blueprint $table) {
+            $table->increments('id')->unsigned();
             $table->string('name');
     });
 }

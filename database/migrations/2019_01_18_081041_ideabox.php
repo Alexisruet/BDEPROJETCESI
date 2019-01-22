@@ -14,7 +14,7 @@ class Ideabox extends Migration
     public function up()
     {
         Schema::create('ideas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('title');
             $table->text('description');
             $table->string('category');
