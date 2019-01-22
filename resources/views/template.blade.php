@@ -81,9 +81,9 @@
 			</nav>
 		</header>
 		<main>
-				@yield('carousel')
+				@yield('main')
 		</main>
-		
+
 			<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">
 

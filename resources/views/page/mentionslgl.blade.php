@@ -1,8 +1,11 @@
 @extends('template')
 
 @section('main')
-<h2>Mentions Légales</h2>
-<p>Nom : BDE-CESI-BDX <br>
+<div class="contain-lgl">
+
+
+<h3 class="title-lgl">Mentions Légales</h3>
+<pc>Nom : BDE-CESI-BDX <br>
 	Adresse : https://www.bde-cesi-bdx.fr/</p>
 <p>Ce site a été créé le 22/01/2019. Son auteur et responsable
 	de publication est joignable à cette adresse : clement.sanchez@viacesi.fr
@@ -31,7 +34,7 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 	 Cette autorisation ne s’applique pas aux sites Internet diffusant des informations à caractère polémique, pornographique, xénophobe <br>
 	 ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre ou à l’ordre public.
 </p>
-<h3>Traitement des données, RGPD</h3>
+<h3 class="title-lgl">Traitement des données, RGPD</h3>
 <p>Vos données ne seront jamais vendues, échangées ou partagées avec d’autre personnes physique ou moral. <br>
  	Vos données sont récupérées dans le but de pouvoir vous contacter en cas de besoin ainsi que pour faire des statistiques <br>
   sur nos ventes, dans un souci d’optimisation des stocks. Lorsque vous participez à un événement organisé par nos soins nous sommes <br>
@@ -42,7 +45,7 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 	Vos informations sont conservées uniquement le temps de votre scolarité. <br>
 	La personne responsable de la protection de vos données est Clément SANCHEZ, joignable à l’adresse mail suivant, clement.sanchez@viacesi.fr
 </p>
-<h3>Conditions générales d'utilisation</h3>
+<h3 class="title-lgl">Conditions générales d'utilisation</h3>
 <p>En accédant à ce site internet, les internautes acceptent les présentes conditions générales d’utilisation.</p>
 <p>Le BDE-CESI-BDX met à la disposition des internautes une base de données d’informations pour lesquelles le maximum <br>
 	a été fait pour s’assurer de leur exactitude au moment de leur mise en ligne. Le BDE-CESI-BDX ne saurait être tenu <br>
@@ -61,7 +64,7 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 	tout sujet contraire à la loi et aux valeurs humanistes ne sont pas acceptés. Je me réserve le droit de supprimer <br>
 	sans avertissement tout commentaire dérogeant à cette règle.
  </p>
-
+</div>
 
 
 @endsection

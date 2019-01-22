@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('carousel')
+@section('main')
 
 <div id="carouselExampleIndicators" class="carousel slide  carousel-fade" data-ride="carousel">
   <div class="carousel-inner" role="listbox">

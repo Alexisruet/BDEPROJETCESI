@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('/home');
 });
 
-Route::get('/mentionlgl', function () {
+Route::get('/mentionslgl', function () {
     return view('page/mentionslgl');
 });
 
