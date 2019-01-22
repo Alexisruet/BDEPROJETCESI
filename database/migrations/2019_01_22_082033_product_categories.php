@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Ideabox extends Migration
+class ProductCategories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class Ideabox extends Migration
      */
     public function up()
     {
-        Schema::create('ideas', function (Blueprint $table) {
+        Schema::create('products_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->text('description');
-            $table->string('category');
+            $table->string('name');
     });
 }
 
@@ -28,6 +26,6 @@ class Ideabox extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ideas');
+        Schema::dropIfExists('products_categories');
     }
 }
