@@ -9,8 +9,7 @@
 
 #navbar1 .navbar-nav .nav-item .nav-link {
     color: white;
-    background:
-        font-family: Cantarell;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 #carouselExampleIndicators {
@@ -42,6 +41,7 @@ footer {
 
 .foot-link {
     margin-left: 100px;
+		font-family: Helvetica,Arial,sans-serif;
 }
 
 .espace {
