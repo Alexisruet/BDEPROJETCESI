@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="icon" type="image" href="img/logo_top.png">
 
@@ -28,32 +28,31 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 					&#9776;
 				</button>
-				<div class="container">
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/bdemembers">Membres du BDE </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/events">Événements</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">Boîte à idées </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop">Boutique </a>
-							</li>
-							<li class="nav-item">
-								<p class="nav-link js-scroll-trigger" href="">&nbsp &nbsp &nbsp &nbsp</p>
-							</li>
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/events">ÉVÉNEMENTS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">BOÎTE À IDÉES </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop">BOUTIQUE </a>
+								</li>
+								<li class="nav-item">
+									<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
+								</li>
 
 							@guest
 									<li class="nav-item">
-											<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+											<a class="nav-link"  id = "item1" href="{{ route('login') }}">{{ __('Login') }}</a>
 									</li>
 									@if (Route::has('register'))
 											<li class="nav-item">
 													<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+											</li>
+											<li class="nav-item">
+												<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
 											</li>
 									@endif
 							@else
@@ -78,13 +77,14 @@
 
 						</ul>
 					</div>
-				</div>
 			</nav>
+			@yield('carousel')
 		</header>
 		<main>
-			<div  id="main">
-							@yield('main')
-			</div>
+				<div class="container" id="contentSite">
+				  <h1>Présentation du BDE</h1>
+				  <p>blablablablablablablablablablablablablablablablablablablablablablabla</p>
+				</div>
 		</main>
 
 	<footer>
