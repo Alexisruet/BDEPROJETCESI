@@ -82,8 +82,7 @@
 		</header>
 		<main>
 				<div class="container" id="contentSite">
-				  <h1>Présentation du BDE</h1>
-				  <p>blablablablablablablablablablablablablablablablablablablablablablabla</p>
+				@yield('main')
 				</div>
 		</main>
 
