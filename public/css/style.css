@@ -37,7 +37,6 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 2vmin;
-    border-left: 0.5px solid grey;
 }
 
 #navbar2 {
@@ -63,7 +62,7 @@
 }
 
 #item1 {
-    margin-left: 150px;
+    margin-right: 150px;
 }
 
 footer {
@@ -123,4 +122,14 @@ footer a:hover {
 
 #presBDE h2 {
     text-align: center;
+}
+
+#login {
+    margin-top: 100px;
+    margin-bottom: 232px;
+}
+
+#register {
+    margin-top: 100px;
+    margin-bottom: 59px;
 }

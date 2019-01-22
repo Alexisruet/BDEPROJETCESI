@@ -29,9 +29,16 @@
 <div class="container" id="presBDE">
 
   <h2>Présentation du BDE </h2>
+  </br>
   <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
     blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
     lablablablablablablablablabla</p>
+    <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+      blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
+      lablablablablablablablablabla</p>
+      <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
+        lablablablablablablablablabla</p>
 
 </div>
 

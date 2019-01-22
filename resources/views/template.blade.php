@@ -38,7 +38,7 @@
 									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">BOÎTE À IDÉES </a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop">BOUTIQUE </a>
+									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop" id="item1" >BOUTIQUE </a>
 								</li>
 								<li class="nav-item">
 									<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
@@ -46,11 +46,11 @@
 
 							@guest
 									<li class="nav-item">
-											<a class="nav-link"  id = "item1" href="{{ route('login') }}">{{ __('Login') }}</a>
+											<a class="nav-link" href="{{ route('login') }}">SE CONNECTER</a>
 									</li>
 									@if (Route::has('register'))
 											<li class="nav-item">
-													<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+													<a class="nav-link" href="{{ route('register') }}">S'INSCRIRE</a>
 											</li>
 											<li class="nav-item">
 												<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
@@ -98,9 +98,9 @@
 					<div class="container" id="logos">
 						<!-- Content -->
 						<h5 class="text-uppercase">A propos</h5>
-						<a href="https://www.facebook.com/bde.cesibordeaux.9" id="logoFacebook"> <i class="fab fa-facebook fa-5x">  </i> </a>
-						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-5x">  </i> </a>
-						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-5x">  </i> </a>
+						<a href="https://www.facebook.com/bde.cesibordeaux.9" id="logoFacebook"> <i class="fab fa-facebook fa-4x">  </i> </a>
+						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-4x">  </i> </a>
+						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-4x">  </i> </a>
 
 					</div>
 
