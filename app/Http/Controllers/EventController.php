@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Event;
 
 class EventController extends Controller
 {
@@ -13,7 +14,7 @@ class EventController extends Controller
      */
     public function index()
     {
-            return view('admin/event');
+            return view('page/createEvent');
     }
 
     /**
@@ -21,9 +22,19 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $event = New Event();
+        $event::create([
+            'title' => $request->input('title'),
+            'content' => $request->input('content')
+        ]);
+    }
+
+    public function showEvents(Request $request)
+    {
+        $data["events"] = Event::all();
+        return view('page/event', $data);
     }
 
     /**

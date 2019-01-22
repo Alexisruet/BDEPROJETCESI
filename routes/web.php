@@ -13,18 +13,22 @@ use App\IdeaBox;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('/home');
 });
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/ideas', 'IdeaBoxController@showIdeas')->name('showIdea');
+Route::get('/events', 'EventController@showEvents')->name('showEvent');
+Route::get('/home', 'HomeController@index')->name('connected');
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaBoxController@index')->name("idea");
     Route::post('/idea', 'IdeaBoxController@create')->name('createIdea');
-    Route::get('/ideas', 'IdeaBoxController@showIdeas')->name('showIdea');
+    Route::get('/event', 'EventController@index')->name('event');
+    Route::post('/event', 'EventController@create')->name('createEvent');
 
 });
 
