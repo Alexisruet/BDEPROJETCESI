@@ -19,9 +19,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
+<<<<<<< HEAD
 Route::get('/home', 'HomeController@index')->name('connected');
 Route::get('/ideas', 'IdeaBoxController@showIdeas')->name('showIdea');
 Route::get('/events', 'EventController@showEvents')->name('showEvent');
+=======
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> 2b1336465d08abd66cab3275000585bbb66fb39b
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaBoxController@index')->name("idea");
