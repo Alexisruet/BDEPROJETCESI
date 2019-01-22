@@ -16,6 +16,11 @@ Route::get('/', function () {
     return view('/home');
 });
 
+Route::get('/mentionlgl', function () {
+    return view('page/mentionslgl');
+});
+
+
 
 Auth::routes();
 
@@ -23,6 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaBoxController@showIdeas')->name('showIdea');
 Route::get('/events', 'EventController@showEvents')->name('showEvent');
 Route::get('/home', 'HomeController@index')->name('connected');
+
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaBoxController@index')->name("idea");

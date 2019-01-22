@@ -81,10 +81,7 @@
 			@yield('carousel')
 		</header>
 		<main>
-				<div class="container" id="contentSite">
-				  <h1>Présentation du BDE</h1>
-				  <p>blablablablablablablablablablablablablablablablablablablablablablabla</p>
-				</div>
+				@yield('main')
 		</main>
 
 	<footer>
