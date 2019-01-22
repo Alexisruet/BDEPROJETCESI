@@ -31,6 +31,10 @@ Route::middleware(['salarie'])->group(function(){
     Route::get('/report', 'ReportController@index')->name('report');
 });
 
+
+Route::get('/image','ImageController@create');
+Route::post('/image','ImageController@store')->name('image');
+
 Route::middleware(['admin'])->group(function(){
     Route::get('/gestion', 'GestionController@index')->name('gestion');
     Route::get('/report', 'ReportController@index')->name('report');
