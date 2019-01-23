@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use DB;
+use App\Model\Centre;
 
 class RegisterController extends Controller
 {
@@ -65,9 +66,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $centre = $_POST['centre'];
+    
         
-        $centres = DB::table('centres')->select('id')->where('city', '=', $centre)->get();
+        $centre = Centre::findOrFail(app('request')->get('centre'));    
 
       return  User::create([
             'name' => $data['name'],
@@ -75,7 +76,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'id_grade' => 1,
-            'id_centre' => $centres[0]->id
+            'id_centre' => $centre->id
         ]);
     }
 }
