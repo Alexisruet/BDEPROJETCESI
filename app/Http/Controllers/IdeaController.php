@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Idea;
+use App\Model\Idea;
 use Illuminate\Http\Request;
 
 class IdeaController extends Controller
@@ -27,7 +27,7 @@ class IdeaController extends Controller
         $idea = New Idea();
         $idea::create([
             'title' => $request->input('title'),
-            'description' => $request->input('description')
+            'description' => $request->input('description'),
         ]);
     }
 

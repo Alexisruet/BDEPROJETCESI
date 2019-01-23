@@ -17,7 +17,7 @@ class Ideabox extends Migration
             $table->increments('id')->unsigned();
             $table->string('title');
             $table->text('description');
-            $table->string('category');
+            $table->string('category')->nullable();
     });
 }
 

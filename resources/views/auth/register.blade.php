@@ -59,6 +59,9 @@
                             <div class="col-md-6">
                                 <select name="centre" class="form-control">
                                     <option value="1">Bordeaux</option>
+                                    <option value="2">Rouen</option>
+                                    <option value="3">Pau</option>
+                                    <option value="4">Paris</option>
                                 </select>
                         
                                 @if ($errors->has('centre'))
