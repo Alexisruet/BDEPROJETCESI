@@ -44,8 +44,8 @@ class MakeForeignKey extends Migration
         });
 
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedInteger('id_grade')->nullable();
-            $table->unsignedInteger('id_centre')->nullable();
+            $table->unsignedInteger('id_grade');
+            $table->unsignedInteger('id_centre');
             $table->foreign('id_grade')->references('id')->on('grades');
             $table->foreign('id_centre')->references('id')->on('centres');
         });
