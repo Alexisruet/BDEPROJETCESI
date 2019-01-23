@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,6 +8,6 @@ class Event extends Model
 {
     public $timestamps = false;
     protected $fillable = [
-        'title', 'content'
+        'title', 'description', 'category', 'id_user'
     ];
 }

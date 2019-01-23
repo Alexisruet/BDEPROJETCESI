@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use Illuminate\Http\Request;
-use App\Event;
+use App\Model\Event;
+use App\Model\Picture;
 
 class EventController extends Controller
 {
@@ -24,11 +26,26 @@ class EventController extends Controller
      */
     public function create(Request $request)
     {
-        $event = New Event();
-        $event::create([
-            'title' => $request->input('title'),
-            'content' => $request->input('content')
+        $user = Auth::user()->id;
+        $event = Event::create([
+            'title' => $request->get('title'),
+            'description' => $request->get('description'),
+            'category' => 'test',
+            'id_user' => $user
         ]);
+
+
+        $file = $request->file('filename');
+        $file->move(public_path() . '/img', $file->getClientOriginalName());  
+        
+        Picture::create([
+            'id_user'=> $user,
+            'id_event' => $event->id,
+            'url'=> $file->getClientOriginalName(),
+        
+        ]);
+
+            
     }
 
     public function showEvents(Request $request)

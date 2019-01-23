@@ -8,6 +8,6 @@ class Idea extends Model
 {
     public $timestamps = false;
     protected $fillable = [
-        'title', 'description', 
+        'title', 'description', 'id_user'
     ];
 }
