@@ -19,9 +19,14 @@
     background-image: url("../img/yop.png");
 }
 
+#card {
+    border-radius: 30px;
+}
+
 .idea {
     margin-top: 100px;
     margin-bottom: 100px;
+    font-family: Helvetic Neue, Arial;
 }
 
 .roundedImage {
@@ -44,9 +49,21 @@
     font-size: 20px;
 }
 
-#tag p {}
+#tag p {
+    color: grey;
+}
 
 #logosLikeBar img {
     width: 25px;
     height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#more-infos {
+    border-radius: 20px;
+    border: solid 2px #00aced;
+    color: #00aced;
+    font-weight: bold;
+    margin-top: 15px;
 }
