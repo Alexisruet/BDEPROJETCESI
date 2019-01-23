@@ -41,6 +41,7 @@
       <div class="col-md-9 row" id="logosLikeBar">
         <div class="col-md-2">
           <img src="img/comment.png" alt="comment">
+
         </div>
         <div class="col-md-2">
           <img src="img/retweet.png" alt="retweet">

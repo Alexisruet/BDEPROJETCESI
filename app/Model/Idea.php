@@ -1,13 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class IdeaBox extends Model
+class Idea extends Model
 {
     public $timestamps = false;
     protected $fillable = [
-        'title', 'content', 
+        'title', 'description', 
     ];
 }

@@ -57,8 +57,13 @@
                             <label for="centre" class="col-md-4 col-form-label text-md-right">{{ __('Centre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="centre" type="text" class="form-control{{ $errors->has('centre') ? ' is-invalid' : '' }}" name="centre" value="{{ old('centre') }}" required autofocus>
-
+                                <select name="centre" class="form-control">
+                                    <option value="1">Bordeaux</option>
+                                    <option value="2">Rouen</option>
+                                    <option value="3">Pau</option>
+                                    <option value="4">Paris</option>
+                                </select>
+                        
                                 @if ($errors->has('centre'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('centre') }}</strong>
