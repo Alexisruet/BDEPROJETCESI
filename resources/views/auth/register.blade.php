@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" id="register">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -95,11 +95,18 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-2 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __("S'inscrire") }}
                                 </button>
                             </div>
+														<div class="col-md-4">
+																<label class="custom-control custom-checkbox">
+																	<input class="custon-control-input" type="checkbox" name="lgl" value="accepted" required>
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-description">J'accepte les <a href="mentionslgl">Conditions générales d'utilisation</a></span>
+																</label>
+														</div>
                         </div>
                     </form>
                 </div>

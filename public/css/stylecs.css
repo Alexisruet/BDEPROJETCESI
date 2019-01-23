@@ -1,0 +1,52 @@
+.contain-lgl {
+    text-align: justify;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.title-lgl {
+    font-weight: bold;
+}
+
+#tabu {
+    margin-left: 40px;
+}
+
+.blue {}
+
+#div-centre {}
+
+#body2 {
+    background-image: url("../img/yop.png");
+}
+
+.idea {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.roundedImage {
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: #FA7272;
+    border: black solid 2px;
+}
+
+#tag {
+    margin-top: 16px;
+}
+
+#tag h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#tag p {}
+
+#logosLikeBar img {
+    width: 25px;
+    height: 25px;
+}
