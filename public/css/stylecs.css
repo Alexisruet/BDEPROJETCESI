@@ -67,3 +67,19 @@
     font-weight: bold;
     margin-top: 15px;
 }
+
+#navShop, #basketShop, #leftShop, #contentShop {
+    border: black solid 1px;
+}
+
+#basketShop img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#basketShop h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
