@@ -99,7 +99,7 @@
 					<div class="container" id="logos">
 						<!-- Content -->
 						<h5 class="text-uppercase">A propos</h5>
-						<a href="https://www.facebook.com/bde.cesibordeaux.9" id="logoFacebook"> <i class="fab fa-facebook fa-2x">  </i> </a>
+						<a href="https://www.facebook.com/bdecesibdx/" id="logoFacebook"> <i class="fab fa-facebook fa-2x">  </i> </a>
 						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-2x">  </i> </a>
 						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-2x">  </i> </a>
 
@@ -154,7 +154,7 @@
 		<!-- Footer Links -->
 
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2018 Copyright :
+		<div class="footer-copyright text-center py-3">© 2019 Copyright :
 			<a href="https://malom.fr"> Malom.fr</a>
 		</div>
 		<!-- Copyright -->

@@ -150,4 +150,9 @@ footer a:hover {
 
 .imgHome img {
     border: solid 4px #6D89D5;
+		margin-top: 15px;
+}
+
+.descriptionMembre	{
+	font-family: Helvetica, Arial, sans-serif;
 }

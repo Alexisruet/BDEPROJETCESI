@@ -32,12 +32,16 @@
   <div class="col-md-8">
       <h2>Présentation du BDE </h2>
       </br>
-      <p>blablablablablablablablablablablablablablablablablablablablablablablab lablablablablablablablablablablablablablabablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
-      <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
-        lablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
-      <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-            blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
-            lablablablablablablablablabla</p>
+      <p>Le bureau des élèves est une association à but non lucratifs qui a pour vocation
+			d'organiser la vie étudiante du CESI. Notre objectif est de de créer des liens entre les étudiants,
+			pour ce faire nous organisons beaucoup de soirées ou d'événements succeptibles d'intéresser un
+			maximum de personnes. L'organisation de tous ces événements coûte chère et pour les financer
+			nous avons mis en place une boutique en ligne vous permettant d'acheter des goodies ou des vétements.
+		 	Vous pourrez ainsi arborer les couleurs de l'école et ainsi la promouvoir</p>
+			<p>Pour éviter tout débordement sur ce site, les salariés de l'école ont un rôle de modération.
+			Nous vous invitons donc à rester polis et courtois. Vous avez la possibilité de contacter un membres du BDE
+		 	si vous avez des réclamations.</p>
+
     </div>
 
     <div class="col-md-2"></div>
@@ -47,17 +51,21 @@
 
     <h2 class="col-md-12">Membres du BDE</h2>
 
-    <div class="col-md-3 imgHome">
+    <div class="col-sm-6 col-md-3 imgHome">
       <img src="img/sancho.jpg" alt="sancho">
+			<p class="descriptionMembre">Président</p>
     </div>
-    <div class="col-md-3 imgHome">
+    <div class="col-sm-6 col-md-3 imgHome">
       <img src="img/lp7.jpg" alt="lp7">
+			<p class="descriptionMembre">Vice-Président</p>
     </div>
-    <div class="col-md-3 imgHome">
+    <div class="col-sm-6 col-md-3 imgHome">
       <img src="img/theo.jpg" alt="theo">
+			<p class="descriptionMembre">Secrétaire</p>
     </div>
-    <div class="col-md-3 imgHome">
+    <div class="col-sm-6 col-md-3 imgHome">
       <img src="img/alex.jpg" alt="alex">
+			<p class="descriptionMembre">Trésorier</p>
     </div>
 
   </div>
