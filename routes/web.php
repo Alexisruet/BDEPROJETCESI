@@ -30,6 +30,7 @@ Route::get('/idea', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
 Route::get('/events', 'EventController@showEvents')->name('showEvent');
@@ -37,7 +38,6 @@ Route::get('/home', 'HomeController@index')->name('connected');
 
 
 Route::middleware(['auth'])->group(function(){
-
     Route::get('/idea', 'IdeaController@index')->name("idea");
     Route::post('/idea', 'IdeaController@create')->name('createIdea');
     Route::get('/event', 'EventController@index')->name('event');

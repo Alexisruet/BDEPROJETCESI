@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Model\Idea;
 use Illuminate\Http\Request;
+use Auth;
 
 class IdeaController extends Controller
 {
@@ -23,11 +24,11 @@ class IdeaController extends Controller
      */
     public function create(Request $request)
     {
-
-        $idea = New Idea();
-        $idea::create([
+        $user = Auth::user()->id;
+         return Idea::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
+            'id_user' => $user
         ]);
     }
 
