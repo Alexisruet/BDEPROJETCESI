@@ -7,7 +7,7 @@
 	</div>
 	<div class="col-md-4" id="div-centre">
 <h3 class="title-lgl">Mentions Légales</h3>
-<pc>Nom : BDE-CESI-BDX <br>
+<p>Nom : BDE-CESI-BDX <br>
 	Adresse : https://www.bde-cesi-bdx.fr/</p>
 <p>Ce site a été créé le 22/01/2019. Son auteur et responsable
 	de publication est joignable à cette adresse : clement.sanchez@viacesi.fr
