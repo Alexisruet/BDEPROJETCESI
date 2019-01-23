@@ -116,18 +116,38 @@ footer a:hover {
     margin-right: 30px;
 }
 
-#presBDE {
+#logos h5 {
+    margin-bottom: 20px;
+}
+
+.home {
     margin-top: 150px;
 }
 
-#presBDE h2 {
+.home h2 {
     text-align: center;
 }
 
 #login {
     margin-top: 100px;
+    margin-bottom: 232px;
 }
 
 #register {
     margin-top: 100px;
+    margin-bottom: 59px;
+}
+
+#rowHome {
+    margin-top: 100px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+#rowHome h2 {
+    margin-bottom: 60px;
+}
+
+.imgHome img {
+    border: solid 4px #6D89D5;
 }

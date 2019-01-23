@@ -26,20 +26,43 @@
   </a>
 </div>
 
-<div class="container" id="presBDE">
+<div class="row home">
+  <div class="col-md-2"></div>
 
-  <h2>Présentation du BDE </h2>
-  </br>
-  <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
-    lablablablablablablablablabla</p>
-    <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-      blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
-      lablablablablablablablablabla</p>
+  <div class="col-md-8">
+      <h2>Présentation du BDE </h2>
+      </br>
+      <p>blablablablablablablablablablablablablablablablablablablablablablablab lablablablablablablablablablablablablablabablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+      <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
+        lablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
       <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
-        lablablablablablablablablabla</p>
+            blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablab
+            lablablablablablablablablabla</p>
+    </div>
 
+    <div class="col-md-2"></div>
 </div>
+
+<div class="row" id="rowHome">
+
+    <h2 class="col-md-12">Membres du BDE</h2>
+
+    <div class="col-md-3 imgHome">
+      <img src="img/sancho.jpg" alt="sancho">
+    </div>
+    <div class="col-md-3 imgHome">
+      <img src="img/lp7.jpg" alt="lp7">
+    </div>
+    <div class="col-md-3 imgHome">
+      <img src="img/theo.jpg" alt="theo">
+    </div>
+    <div class="col-md-3 imgHome">
+      <img src="img/alex.jpg" alt="alex">
+    </div>
+
+  </div>
+
+
+
 
 @endsection
