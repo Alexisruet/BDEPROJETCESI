@@ -33,13 +33,13 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="/page/events">ÉVÉNEMENTS</a>
+									<a class="nav-link js-scroll-trigger" href="event">ÉVÉNEMENTS</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">BOÎTE À IDÉES </a>
+									<a class="nav-link js-scroll-trigger" href="idea">BOÎTE À IDÉES </a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/shop" id="item1" >BOUTIQUE </a>
+									<a class="nav-link js-scroll-trigger" href="shop" id="item1" >BOUTIQUE </a>
 								</li>
 								<li class="nav-item">
 									<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
@@ -132,7 +132,7 @@
 					<div class="col-md-4 mb-md-0 md-4">
 
 						<!-- Links -->
-						<h5 class="text-uppercase" id="TitleFooter">Mentions légales</h5>
+						<h5 class="text-uppercase" id="TitleFooter" href="/page/mentionslgl">Mentions légales</h5>
 
 						<ul class="list-unstyled">
 							<li>
