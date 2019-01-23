@@ -25,13 +25,6 @@
       </div>
     </div>
 
-    <div class="likeNumber row">
-      <div class="col-md-2"></div>
-      <div class="col-md-9">
-        <p class="card-text">11:24 - 23 Janv. 2019</p>
-      </div>
-    </div>
-
     <div class="likebar row">
       <div class="col-md-2"></div>
       <div class="col-md-9 row" id="logosLikeBar">
@@ -49,3 +42,4 @@
 
   </div>
 </div>
+@endsection

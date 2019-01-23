@@ -36,7 +36,7 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 	 Cette autorisation ne s’applique pas aux sites Internet diffusant des informations à caractère polémique, pornographique, xénophobe
 	 ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre ou à l’ordre public.
 </p>
-<h3 class="title-lgl">Traitement des données, RGPD</h3>
+<h3 class="title-lgl" id="RGPD">Traitement des données, RGPD</h3>
 <p>Vos données ne seront jamais vendues, échangées ou partagées avec d’autre personnes physique ou moral.
  	Vos données sont récupérées dans le but de pouvoir vous contacter en cas de besoin ainsi que pour faire des statistiques
   sur nos ventes, dans un souci d’optimisation des stocks. Lorsque vous participez à un événement organisé par nos soins nous sommes
@@ -47,7 +47,7 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 	Vos informations sont conservées uniquement le temps de votre scolarité.
 	La personne responsable de la protection de vos données est Clément SANCHEZ, joignable à l’adresse mail suivant, clement.sanchez@viacesi.fr
 </p>
-<h3 class="title-lgl">Conditions générales d'utilisation</h3>
+<h3 class="title-lgl" id="CondGen">Conditions générales d'utilisation</h3>
 <p>En accédant à ce site internet, les internautes acceptent les présentes conditions générales d’utilisation.</p>
 <p>Le BDE-CESI-BDX met à la disposition des internautes une base de données d’informations pour lesquelles le maximum
 	a été fait pour s’assurer de leur exactitude au moment de leur mise en ligne. Le BDE-CESI-BDX ne saurait être tenu
