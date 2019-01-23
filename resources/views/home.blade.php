@@ -25,13 +25,14 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<div class="col-md-12 margeMem"></div>
 <div class="row home">
   <div class="col-md-2"></div>
 
-  <div class="col-md-8">
+  <div class="col-md-8" id="presBDE">
       <h2>Présentation du BDE </h2>
-      </br>
+      <br>
+			<br>
       <p>Le bureau des élèves est une association à but non lucratifs qui a pour vocation
 			d'organiser la vie étudiante du CESI. Notre objectif est de de créer des liens entre les étudiants,
 			pour ce faire nous organisons beaucoup de soirées ou d'événements succeptibles d'intéresser un
@@ -41,13 +42,23 @@
 			<p>Pour éviter tout débordement sur ce site, les salariés de l'école ont un rôle de modération.
 			Nous vous invitons donc à rester polis et courtois. Vous avez la possibilité de contacter un membres du BDE
 		 	si vous avez des réclamations.</p>
+			<div class="imgWei">
+				<img src="img/wei.jpg" alt="journée d'intégration">
+			</div><br>
+			<p>Le BDE met également en place plusieurs associations pour occuper vos Jeudi après-midi, vous aurez
+			 le choix entre jouer aux jeux vidéo entre amis grâce à l'association AC/DC (association de coopération
+			 et de détente et de compétiont), améliorer votre prise de parole en public grâce à l'associations Eloquence
+		 	 mise en place par Benjamin Coudannes. Si vous êtes passionnés d'élèctronique, Corentin Lapastoure vous permet
+		 	 d'utiliser le matériel de l'école pour réparer vos objets défectueux, vous pouvez aussi lui confier vos objets
+		 	 et il se chargera lui même de le réssuciter.</p>
 
     </div>
 
     <div class="col-md-2"></div>
 </div>
+<div class="col-md-12 margeMem"></div>
 
-<div class="row" id="rowHome">
+<div class="row" id="rowMem">
 
     <h2 class="col-md-12">Membres du BDE</h2>
 
