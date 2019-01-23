@@ -8,6 +8,6 @@ class IdeaBox extends Model
 {
     public $timestamps = false;
     protected $fillable = [
-        'title', 'content', 
+        'title', 'description', 
     ];
 }

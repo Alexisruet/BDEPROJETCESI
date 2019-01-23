@@ -69,7 +69,7 @@ class RegisterController extends Controller
         
         $centres = DB::table('centres')->select('id')->where('city', '=', $centre)->get();
 
-        User::create([
+      return  User::create([
             'name' => $data['name'],
             'surname' => $data['surname'],
             'email' => $data['email'],

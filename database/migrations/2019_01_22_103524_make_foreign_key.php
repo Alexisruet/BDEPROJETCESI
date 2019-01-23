@@ -31,8 +31,8 @@ class MakeForeignKey extends Migration
 
         Schema::table('ideas', function (Blueprint $table) {
             $table->unsignedInteger('id_user');
-            $table->unsignedInteger('id_event');
-            $table->foreign('id_event')->references('id')->on('events');
+           // $table->unsignedInteger('id_event');
+           // $table->foreign('id_event')->references('id')->on('events');
             $table->foreign('id_user')->references('id')->on('users');
         });
 
