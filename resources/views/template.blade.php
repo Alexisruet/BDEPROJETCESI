@@ -32,7 +32,7 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/events">ÉVÉNEMENTS</a>
+									<a class="nav-link js-scroll-trigger" href="/page/events">ÉVÉNEMENTS</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link js-scroll-trigger" href="http://localhost/laravel/BDE-CESI-BDX/public/idea">BOÎTE À IDÉES </a>

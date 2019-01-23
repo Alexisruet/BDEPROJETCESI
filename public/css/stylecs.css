@@ -1,3 +1,24 @@
 .contain-lgl{
-	text-align: center;
+	text-align: justify;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.title-lgl{
+	font-weight: bold;
+}
+
+#tabu{
+	margin-left: 40px;
+}
+
+.blue{
+
+}
+
+#div-centre{
+
+}
+
+#body2{
+background-image: url("../img/yop.png");
 }
