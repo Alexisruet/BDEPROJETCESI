@@ -3,6 +3,8 @@
 @section('main')
 
 <div class="container idea">
+	@foreach ($ideas as $idea)
+
   <div class="card w-75" id="card">
     <div class="card-body row">
       <div class="col-md-2">
@@ -10,7 +12,7 @@
       </div>
       <div id="tag">
           <h5>Nom Prénom</h5>
-          <p>@PrenomNom</p>
+          <p>Nom de l'asso : {{ $idea->title }}</p>
       </div>
       <div class="col-md-5"> </div>
       <div class="col-md-2">
@@ -21,7 +23,14 @@
     <div class="text row">
       <div class="col-md-2"></div>
       <div class="col-md-9">
-        <h5 class="card-title">Oh ce serait une bonne idée d'organiser un soccer un jeudi !</h5>
+        <h5 class="card-title">description : {{ $idea->description }}</h5>
+      </div>
+    </div>
+
+    <div class="likeNumber row">
+      <div class="col-md-2"></div>
+      <div class="col-md-9">
+        <p class="card-text">11:24 - 23 Janv. 2019</p>
       </div>
     </div>
 
@@ -41,5 +50,6 @@
     </div>
 
   </div>
+	@endforeach
 </div>
 @endsection

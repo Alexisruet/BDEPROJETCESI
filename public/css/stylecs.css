@@ -64,6 +64,7 @@
 
 #card {
     border-radius: 30px;
+		margin-bottom: 20px;
 }
 
 #navShop, #basketShop, #leftShop, #contentShop {
