@@ -17,7 +17,7 @@
 
 #body2 {
     background-image: url("../img/yop.png");
-		padding-top: 20px;
+    padding-top: 20px;
 }
 
 .idea {
@@ -50,9 +50,6 @@
 #logosLikeBar img {
     width: 25px;
     height: 25px;
-<<<<<<< HEAD
-}
-=======
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -63,6 +60,10 @@
     color: #00aced;
     font-weight: bold;
     margin-top: 15px;
+}
+
+#card {
+    border-radius: 30px;
 }
 
 #navShop, #basketShop, #leftShop, #contentShop {
@@ -80,4 +81,3 @@
     margin-top: 20px;
     font-weight: bold;
 }
->>>>>>> 01cfc9993c14a2f0fd163e08c4b7e466e66bf9f6
