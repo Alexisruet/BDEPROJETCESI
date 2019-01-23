@@ -59,6 +59,7 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 5vmin;
+    border-radius: 10px;
 }
 
 #item1 {
@@ -122,9 +123,8 @@ footer a:hover {
 
 .home {
     padding-top: 50px;
-		padding-bottom: 50px;
-
-		background-color:	#DCDCDC;
+    padding-bottom: 50px;
+    background-color: #DCDCDC;
 }
 
 .home h2 {
@@ -153,23 +153,23 @@ footer a:hover {
 
 .imgHome img {
     border: solid 4px #6D89D5;
-		margin-top: 15px;
+    margin-top: 15px;
 }
 
-.descriptionMembre	{
-	font-family: Helvetica, Arial, sans-serif;
+.descriptionMembre {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-.margeMem	{
-	background-color: black;
-	height: 5px;
+.margeMem {
+    background-color: black;
+    height: 5px;
 }
 
-#presBDE{
-	text-align: justify;
-	font-family: Helvetica, Arial, sans-serif;
+#presBDE {
+    text-align: justify;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-.imgWei{
-	text-align: center;
+.imgWei {
+    text-align: center;
 }
