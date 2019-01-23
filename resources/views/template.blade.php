@@ -36,7 +36,7 @@
 									<a class="nav-link js-scroll-trigger" href="event">ÉVÉNEMENTS</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="idea">BOÎTE À IDÉES </a>
+									<a class="nav-link js-scroll-trigger" href="ideas">BOÎTE À IDÉES </a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link js-scroll-trigger" href="shop" id="item1" >BOUTIQUE </a>
