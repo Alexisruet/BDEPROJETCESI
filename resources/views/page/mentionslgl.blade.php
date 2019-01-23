@@ -83,5 +83,4 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 
 	</div>
 </div>
-
 @endsection

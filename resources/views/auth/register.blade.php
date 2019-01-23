@@ -97,7 +97,7 @@
                             </div>
 														<div class="col-md-3">
 																<label class="custom-control custom-checkbox">
-																	<input class="custon-control-input" type="checkbox" name="lgl" value="accepted">
+																	<input class="custon-control-input" type="checkbox" name="lgl" value="accepted" required>
 																	<span class="custom-control-indicator"></span>
 																	<span class="custom-control-description">J'accepte les <a href="mentionslgl">Conditions Générales d'utilisation</a></span>
 																</label>
