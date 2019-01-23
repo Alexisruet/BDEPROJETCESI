@@ -53,7 +53,6 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'surname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-          //  'city' => ['required', 'string', 'max:255'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
     }
@@ -70,21 +69,13 @@ class RegisterController extends Controller
         
         $centres = DB::table('centres')->select('id')->where('city', '=', $centre)->get();
 
-        DB::table('users')->insert(
-            array('id_centre' => $centres[0]->id)
-        );
-        
-        return User::create([
+        User::create([
             'name' => $data['name'],
             'surname' => $data['surname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'id_grade' => 1,
+            'id_centre' => $centres[0]->id
         ]);
-
-        
-/*
-        return Centre::create([
-            'city' => $data['city'],
-        ]);*/
     }
 }
