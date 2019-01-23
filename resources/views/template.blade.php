@@ -134,10 +134,10 @@
 
 						<ul class="list-unstyled">
 							<li>
-								<a href="#!">RGPD</a>
+								<a href="mentionslgl#RGPD">RGPD</a>
 							</li>
 							<li>
-								<a href="#!">Conditions générales</a>
+								<a href="mentionslgl#CondGen">Conditions générales</a>
 							</li>
 							<li>
 								<a href="#!">Conditions de vente</a>

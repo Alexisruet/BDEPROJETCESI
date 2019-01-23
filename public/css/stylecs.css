@@ -50,4 +50,34 @@
 #logosLikeBar img {
     width: 25px;
     height: 25px;
+<<<<<<< HEAD
 }
+=======
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#more-infos {
+    border-radius: 20px;
+    border: solid 2px #00aced;
+    color: #00aced;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#navShop, #basketShop, #leftShop, #contentShop {
+    border: black solid 1px;
+}
+
+#basketShop img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#basketShop h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+>>>>>>> 01cfc9993c14a2f0fd163e08c4b7e466e66bf9f6
