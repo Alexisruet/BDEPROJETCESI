@@ -8,7 +8,7 @@
   <div class="card w-75" id="card">
     <div class="card-body row">
       <div class="col-md-2">
-        <div class="roundedImage" style="background-color:red 0px 0px;"></div>
+        <div class="roundedImage"> <img src="img/logo_top.png"> </div>
       </div>
       <div id="tag">
           <h5>Nom Prénom</h5>
