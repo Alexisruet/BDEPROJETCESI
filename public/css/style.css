@@ -173,3 +173,31 @@ footer a:hover {
 .imgWei {
     text-align: center;
 }
+
+.link:active + .popup {
+	display: block;
+}
+
+.popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	bottom: 0;
+	display: none;
+}
+
+.popup:hover {
+	display: block;
+}
+
+.popup .box {
+	position: absolute;
+	top: 0;
+	left: 130px;
+	right: 0;
+	bottom: 0;
+	background: #505050;
+	color: #fff;
+	padding: 10px 20px;
+}

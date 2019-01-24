@@ -22,8 +22,16 @@
 	      </div>
 			</div>
       <div class="col-md-3">
-        <button type="button" class="btn btn-light" id="more-infos">Plus d'infos</button>
+				<div class="link-with-pupup">
+        	<button type="button linky" class="btn link btn-light" id="more-infos">
+						Plus d'infos
+			 		</button>
+						<div class="popup">
+							<div class="box">{{ $idea->description }}</div>
+						</div>
+				</div>
       </div>
+
 
       <div class="col-md-2"></div>
       <div class="col-md-8">

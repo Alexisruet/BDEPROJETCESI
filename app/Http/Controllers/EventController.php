@@ -51,6 +51,7 @@ class EventController extends Controller
     public function showEvents(Request $request)
     {
         $data["events"] = Event::all();
+        $data["pictures"] = Picture::all();
         return view('page/event', $data);
     }
 
