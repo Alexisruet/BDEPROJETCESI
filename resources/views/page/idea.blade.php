@@ -7,6 +7,7 @@
 
   <div class="card w-75" id="card">
     <div class="card-body row">
+
       <div class="col-md-2">
         <div class="roundedImage"> <img src="img/logo_top.png" alt="logo cesi"> </div>
       </div>
@@ -43,7 +44,7 @@
         </div>
       </div>
 			<div class="col-md-1"></div>
-			
+
     </div>
   </div>
 	@endforeach

@@ -6,7 +6,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/batC.jpg" alt="First slide">
-      <div class="carousel-caption d-md-block">
+      <div class="carousel-caption d-md-block" id="Welcome">
         <p id="p1"> Bienvenue sur le site du BDE </br> CESI Bordeaux </p>
       </div>
     </div>
