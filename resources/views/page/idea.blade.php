@@ -8,41 +8,28 @@
   <div class="card w-75" id="card">
     <div class="card-body row">
       <div class="col-md-2">
-<<<<<<< HEAD
         <div class="roundedImage"> <img src="img/logo_top.png" alt="logo cesi"> </div>
-=======
-        <div class="roundedImage"> <img src="img/logo_top.png"> </div>
->>>>>>> 89ed183faa4c25ed2a616d8872060203339c8eb9
       </div>
-      <div id="tag">
-				<?php
-					$idUser = $idea->id_user;
-					$name = DB::table('users')->whereId($idUser)->first();
-				?>
-          <h5>{{ $name->name }} {{ $name->surname }} </h5>
-          <p>&#64;{{ $name->surname }}{{ $name->name }}</p>
-      </div>
-      <div class="col-md-5"> </div>
-      <div class="col-md-2">
+			<div class="col-md-7">
+	      <div id="tag">
+					<?php
+						$idUser = $idea->id_user;
+						$name = DB::table('users')->whereId($idUser)->first();
+					?>
+	          <h5>{{ $name->name }} {{ $name->surname }} </h5>
+	          <p>&#64;{{ $name->surname }}{{ $name->name }}</p>
+	      </div>
+			</div>
+      <div class="col-md-3">
         <button type="button" class="btn btn-light" id="more-infos">Plus d'infos</button>
       </div>
-    </div>
 
-    <div class="text row">
       <div class="col-md-2"></div>
-      <div class="col-md-9">
+      <div class="col-md-8">
         <h5 class="card-title">{{ $idea->title }}</h5>
       </div>
-    </div>
+			<div class="col-md-2"></div>
 
-    <div class="likeNumber row">
-      <div class="col-md-2"></div>
-      <div class="col-md-9">
-        <p class="card-text">11:24 - 23 Janv. 2019</p>
-      </div>
-    </div>
-
-    <div class="likebar row">
       <div class="col-md-2"></div>
       <div class="col-md-9 row" id="logosLikeBar">
         <div class="col-md-2">
@@ -55,8 +42,9 @@
           <img src="img/like.png" alt="like">&nbsp21
         </div>
       </div>
+			<div class="col-md-1"></div>
+			
     </div>
-
   </div>
 	@endforeach
 </div>
