@@ -13,16 +13,15 @@
                 </div>
                 <div>
                     Description : {{ $event->description }}
-                </div>
-                <form name="comment" method="POST">
-  Commenter<br>
-  <input type="text" name="commenter">
-  <br>
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+            </div>
+
+                    <div>
+                    @foreach ($pictures as $pic)
+                    <img src="{{ asset($pic->url) }}">
+                    </div> 
             </div> 
             
+        @endforeach
         @endforeach
     </div>
 </div>

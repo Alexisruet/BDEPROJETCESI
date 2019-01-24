@@ -38,7 +38,7 @@ class EventController extends Controller
         $file = $request->file('filename');
         $file->move(public_path() . '/img', $file->getClientOriginalName());  
         
-        Picture::create([
+       $pic = Picture::create([
             'id_user'=> $user,
             'id_event' => $event->id,
             'url'=> $file->getClientOriginalName(),
