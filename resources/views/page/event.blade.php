@@ -12,15 +12,17 @@
                     Événement : {{ $event->title }}
                 </div>
                 <div>
-                    Description : {{ $event->content }}
-                </div>
-            </div> 
-            <div>
-            <form enctype="multipart/form-data" action="#" method="post">
-                <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
-                <input type="file" name="photo" accept="image/png, image/jpeg" size=50 />
-                <input type="submit" value="Envoyer" />
-                </div>
+                    Description : {{ $event->description }}
+            </div>
+
+                    <div>
+                    @foreach($pictures as $picture)
+                    @if($picture->id_event == $event->id)
+                    <img src="img/{{ $picture->url }}">
+                    @endif
+                    @endforeach
+                    </div> 
+            </div>       
         @endforeach
     </div>
 </div>
