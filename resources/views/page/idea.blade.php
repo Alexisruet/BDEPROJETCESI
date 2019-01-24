@@ -8,7 +8,11 @@
   <div class="card w-75" id="card">
     <div class="card-body row">
       <div class="col-md-2">
+<<<<<<< HEAD
         <div class="roundedImage"> <img src="img/logo_top.png" alt="logo cesi"> </div>
+=======
+        <div class="roundedImage"> <img src="img/logo_top.png"> </div>
+>>>>>>> 89ed183faa4c25ed2a616d8872060203339c8eb9
       </div>
       <div id="tag">
 				<?php
