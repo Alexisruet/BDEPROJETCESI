@@ -8,11 +8,15 @@
   <div class="card w-75" id="card">
     <div class="card-body row">
       <div class="col-md-2">
-        <div class="roundedImage" style="background-color:red 0px 0px;"></div>
+        <div class="roundedImage"> <img src="img/logo_top.png" alt="logo cesi"> </div>
       </div>
       <div id="tag">
-          <h5>Nom Prénom</h5>
-          <p>Nom de l'asso : {{ $idea->title }}</p>
+				<?php
+					$idUser = $idea->id_user;
+					$name = DB::table('users')->whereId($idUser)->first();
+				?>
+          <h5>{{ $name->name }} {{ $name->surname }} </h5>
+          <p>&#64;{{ $name->surname }}{{ $name->name }}</p>
       </div>
       <div class="col-md-5"> </div>
       <div class="col-md-2">
@@ -23,7 +27,7 @@
     <div class="text row">
       <div class="col-md-2"></div>
       <div class="col-md-9">
-        <h5 class="card-title">description : {{ $idea->description }}</h5>
+        <h5 class="card-title">{{ $idea->title }}</h5>
       </div>
     </div>
 
