@@ -53,17 +53,25 @@
 
   <div class="col-md-2" id="leftShop">
 
-
-    <div class="card" style="width: 18rem;">
-      <h5 class="card-title">PROMO DE LA SEMAINE</h5>
-
-      <div class="card-body">
-        <p class="card-text">A vendre : le pire dev back du CESI. 10 balles</p>
+    <div class="card-body row">
+      <div class="col-md-12  sales">
+        <h5 class="card-title" id="SalesTitle">PROMO DE LA SEMAINE</h5>
+      </div>
+      <div class="col-md-12">
+        <img src="img/pull1.png" alt="Item en promo">
+      </div>
+      <div class="col-md-6">
+        <p class="card-text" id="Prix1">Prix : <strike>30€</strike></p>
+      </div>
+      <div class="col-md-6">
+        <p class="card-text" id="Prix2">20€</p>
       </div>
     </div>
   </div>
+
+
   <div class="col-md-8 shop">
-        <div id="carouselShop" class="carousel slide  carousel-fade" data-ride="carousel">
+        <div class="carousel slide  carousel-fade" data-ride="carousel">
           <div class="carousel-inner " role="listbox">
             <div class="carousel-item active">
               <img class="d-block w-100" src="img/pull1.png" alt="First slide">
