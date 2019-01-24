@@ -45,6 +45,7 @@ class EventController extends Controller
         
         ]);
 
+        return $this->showEvents($request);
             
     }
 

@@ -25,11 +25,13 @@ class IdeaController extends Controller
     public function create(Request $request)
     {
         $user = Auth::user()->id;
-         return Idea::create([
+         Idea::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
             'id_user' => $user
         ]);
+
+        return $this->showIdeas($request);
     }
 
     public function showIdeas(Request $request)

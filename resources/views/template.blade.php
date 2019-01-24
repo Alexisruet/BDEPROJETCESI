@@ -33,7 +33,7 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="event">ÉVÉNEMENTS</a>
+									<a class="nav-link js-scroll-trigger" href="events">ÉVÉNEMENTS</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link js-scroll-trigger" href="ideas">BOÎTE À IDÉES </a>

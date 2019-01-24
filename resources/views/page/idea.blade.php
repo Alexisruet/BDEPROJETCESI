@@ -15,7 +15,7 @@
 	      <div id="tag">
 					<?php
 						$idUser = $idea->id_user;
-						$name = DB::table('users')->whereId($idUser)->first();
+            $name = DB::table('users')->whereId($idUser)->first();
 					?>
 	          <h5>{{ $name->name }} {{ $name->surname }} </h5>
 	          <p>&#64;{{ $name->surname }}{{ $name->name }}</p>
