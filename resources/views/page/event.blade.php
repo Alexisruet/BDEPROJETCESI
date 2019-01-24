@@ -12,15 +12,17 @@
                     Événement : {{ $event->title }}
                 </div>
                 <div>
-                    Description : {{ $event->content }}
+                    Description : {{ $event->description }}
                 </div>
+                <form name="comment" method="POST">
+  Commenter<br>
+  <input type="text" name="commenter">
+  <br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
             </div> 
-            <div>
-            <form enctype="multipart/form-data" action="#" method="post">
-                <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
-                <input type="file" name="photo" accept="image/png, image/jpeg" size=50 />
-                <input type="submit" value="Envoyer" />
-                </div>
+            
         @endforeach
     </div>
 </div>
