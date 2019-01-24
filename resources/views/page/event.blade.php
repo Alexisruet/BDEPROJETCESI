@@ -16,12 +16,13 @@
             </div>
 
                     <div>
-                    @foreach ($pictures as $pic)
-                    <img src="{{ asset($pic->url) }}">
+                    @foreach($pictures as $picture)
+                    @if($picture->id_event == $event->id)
+                    <img src="img/{{ $picture->url }}">
+                    @endif
+                    @endforeach
                     </div> 
-            </div> 
-            
-        @endforeach
+            </div>       
         @endforeach
     </div>
 </div>
