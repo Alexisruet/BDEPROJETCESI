@@ -16,6 +16,11 @@ class GestionController extends Controller
         return view('page/shop');
     }
 
+    public function contact()
+    {
+        return view('page/contact');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

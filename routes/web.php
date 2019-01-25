@@ -31,6 +31,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
 Route::get('/events', 'EventController@showEvents')->name('showEvent');
 Route::get('/home', 'HomeController@index')->name('connected');
+Route::get('/contact', 'GestionController@contact')->name('contact');
+
 
 
 
