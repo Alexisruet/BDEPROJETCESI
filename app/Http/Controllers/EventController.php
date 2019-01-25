@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Model\Event;
 use App\Model\Picture;
 use App\Model\ToRegister;
+use App\Model\ToComment;
 
 class EventController extends Controller
 {
@@ -61,6 +62,20 @@ class EventController extends Controller
        ]);
        
     }
+
+    public function commenter(Request $request)
+    {
+        $user = $request->user()->id;
+        $ev = DB::table('events')->whereId($user)->first();
+
+        ToComment::create([
+           'id_user' => $user,
+           'id_event' => $ev->id,
+           'content' => $request->get('comment'),
+       ]);
+       
+    }
+
     public function showEvents(Request $request)
     {
         $data["events"] = Event::all();

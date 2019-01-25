@@ -13,10 +13,10 @@ class ToComment extends Migration
      */
     public function up()
     {
-        Schema::create('to_comment', function (Blueprint $table) {
+        Schema::create('to_comments', function (Blueprint $table) {
             $table->string('content');
-            $table->unsignedInteger('id_picture');
-            $table->foreign('id_picture')->references('id')->on('pictures');
+            $table->unsignedInteger('id_event');
+            $table->foreign('id_event')->references('id')->on('events');
             $table->unsignedInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users');
     });
@@ -29,6 +29,6 @@ class ToComment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('to_comment');
+        Schema::dropIfExists('to_comments');
     }
 }

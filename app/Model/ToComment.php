@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ToComment extends Model
 {
+    public $timestamps = false;
     protected $fillable = [
-        'url', 'id_picture', 'id_user',
+        'content', 'id_event', 'id_user',
     ];
 }

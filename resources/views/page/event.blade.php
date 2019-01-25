@@ -26,6 +26,13 @@
                     <button type="submit"id="inscription">Pour s'inscrire</button>
                     </form>
                     </div> 
+
+                    <form action="{{ route('commenter') }}" method='POST' id = 'gg' enctype="multipart/form-data">
+                {{csrf_field()}}
+                <p><input placeholder="Commentaire" class="center color-text" type='text' name='comment' id='comment' required></input></p>
+                <button type="submit"id="commente">Commenter</button>
+                    </form>
+                    </div> 
             </div>       
         @endforeach
     </div>
