@@ -42,8 +42,9 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/idea', 'IdeaController@create')->name('createIdea');
     Route::get('/event', 'EventController@index')->name('event');
     Route::post('/event', 'EventController@create')->name('createEvent');
-    Route::post('/eventss', 'EventController@commenter')->name('commenter');
     Route::post('/events', 'EventController@inscrire')->name('inscrire');
+    Route::post('/eventss', 'EventController@commenter')->name('commenter');
+   
 
 });
 

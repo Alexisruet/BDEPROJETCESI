@@ -54,8 +54,7 @@ class EventController extends Controller
     public function inscrire(Request $request)
     {
         $user = $request->user()->id;
-        $ev = DB::table('events')->whereId($user)->first();
-
+        $ev = DB::table('events')->where('id_user', '=', $user)->first();
         ToRegister::create([
            'id_user' => $user,
            'id_event' => $ev->id,
@@ -68,7 +67,7 @@ class EventController extends Controller
     public function commenter(Request $request)
     {
         $user = $request->user()->id;
-        $ev = DB::table('events')->whereId($user)->first();
+        $ev = DB::table('events')->where('id_user', '=', $user)->first();
 
         ToComment::create([
            'id_user' => $user,
