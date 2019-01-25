@@ -217,6 +217,9 @@ footer a:hover {
 #ideaValidate{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	background-color: #6D89D5;
+	font-family: Helvetica, Arial, sans-serif;
+	color: white; 
 }
 
 #titreCI{
@@ -231,9 +234,7 @@ footer a:hover {
 }
 
 #bodyCI{
-	background-image: url("../img/lumen.jpg");
-	background-repeat: no-repeat;
-
+    background-color: #DCDCDC;
 }
 
 #yopLaBoum{
