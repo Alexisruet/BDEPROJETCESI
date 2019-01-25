@@ -23,7 +23,11 @@
                     @endforeach
                     <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
                 {{csrf_field()}}
-                    <button type="submit"id="inscription">Pour s'inscrire</button>
+                <a
+                href="/events/{{ $event -> id}}"
+                <button type="submit"id="inscription">Pour s'inscrire</button>
+</a>
+                
                     </form>
                     </div> 
 

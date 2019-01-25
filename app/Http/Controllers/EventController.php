@@ -51,13 +51,15 @@ class EventController extends Controller
         return $this->showEvents($request);
             
     }
-    public function inscrire(Request $request)
+    public function inscrire(Request $request, $id)
     {
         $user = $request->user()->id;
-        $ev = DB::table('events')->where('id_user', '=', $user)->first();
+        //dd($user);
+        
+
         ToRegister::create([
            'id_user' => $user,
-           'id_event' => $ev->id,
+           'id_event' => $id,
        ]);
 
        return $this->showEvents($request);

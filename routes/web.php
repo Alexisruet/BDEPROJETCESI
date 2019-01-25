@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('/home');
 });
 
+
+
+
 Route::get('/mentionslgl', function () {
     return view('page/mentionslgl');
 });
@@ -33,7 +36,7 @@ Route::get('/events', 'EventController@showEvents')->name('showEvent');
 Route::get('/home', 'HomeController@index')->name('connected');
 // Route::post('/eventss', 'EventController@commenter')->name('commenter');
 Route::get('/contact', 'GestionController@contact')->name('contact');
-
+Route::get('/events/{id}', 'EventController@inscrire');
 
 
 
@@ -44,6 +47,7 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/event', 'EventController@create')->name('createEvent');
     Route::post('/events', 'EventController@inscrire')->name('inscrire');
     Route::post('/eventss', 'EventController@commenter')->name('commenter');
+    //events/{{ $event -> id}}"
    
 
 });
