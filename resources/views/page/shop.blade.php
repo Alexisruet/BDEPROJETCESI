@@ -71,7 +71,7 @@
 
       <div class="col-md-12">
         <div class="card w-50 CardCarou">
-            <h5 class="card-title">{{ $idea->title }}</h5>
+            <h5 class="card-title">Articles </h5>
           <div class="carousel slide  carousel-fade" id="carouselShop" data-ride="carousel">
             <div class="carousel-inner " role="listbox">
               <div class="carousel-item active">
