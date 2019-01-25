@@ -40,11 +40,9 @@ Route::get('/contact', 'GestionController@contact')->name('contact');
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaController@index')->name("idea");
     Route::post('/idea', 'IdeaController@create')->name('createIdea');
-    Route::get('/event', 'EventController@index')->name('event');
-    Route::post('/event', 'EventController@create')->name('createEvent');
     Route::post('/events', 'EventController@inscrire')->name('inscrire');
     Route::post('/eventss', 'EventController@commenter')->name('commenter');
-   
+
 
 });
 
@@ -53,6 +51,8 @@ Route::middleware(['salarie'])->group(function(){
 });
 
 Route::middleware(['admin'])->group(function(){
+		Route::get('/event', 'EventController@index')->name('event');
+		Route::post('/event', 'EventController@create')->name('createEvent');
     Route::get('/report', 'ReportController@indexAdmin')->name('report');
     Route::get('/gestion', 'GestionController@index')->name('gestion');
     Route::get('/product', 'ProductController@index')->name("product");
