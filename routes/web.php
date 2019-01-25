@@ -17,8 +17,6 @@ Route::get('/', function () {
     return view('/home');
 });
 
-
-
 Route::get('/mentionslgl', function () {
     return view('page/mentionslgl');
 });
@@ -27,14 +25,7 @@ Route::get('/shop', function () {
     return view('page/shop');
 });
 
-Route::get('/idea', function () {
-    return view('page/idea');
-});
-
 Auth::routes();
-
-Route::get('/tets', 'ProductController@index')->name("product");
-Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
@@ -57,9 +48,8 @@ Route::middleware(['salarie'])->group(function(){
 });
 
 Route::middleware(['admin'])->group(function(){
+    Route::get('/report', 'ReportController@indexAdmin')->name('report');
     Route::get('/gestion', 'GestionController@index')->name('gestion');
-    Route::get('/report', 'ReportController@index')->name('report');
-    Route::post('/addEvent', 'EventController@index')->name('addEvent');
-    Route::post('/addProduct', 'ProductController@create')->name('addProduct');
-
+    Route::get('/product', 'ProductController@index')->name("product");
+    Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 });

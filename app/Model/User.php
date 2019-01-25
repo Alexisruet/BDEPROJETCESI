@@ -28,11 +28,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function Admin() {
-    return $this->role == 'Admin';
+    public function Salarie() {
+        return $this->id_grade == 2;
     }
 
-    public function Salarie() {
-        return $this->role == 'Salarie';
+    public function Admin() {
+    return $this->id_grade == 3;
     }
 }

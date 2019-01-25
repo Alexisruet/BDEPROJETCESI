@@ -19,7 +19,7 @@ class Salarie
     {
         $user = $request->user();
  
-        if ($user && $user->Salarie())
+        if ($user->Salarie())
         {
             return $next($request);
         }

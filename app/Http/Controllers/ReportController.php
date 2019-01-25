@@ -21,9 +21,9 @@ class ReportController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function indexAdmin()
     {
-        //
+        return view('salarie/report');
     }
 
     /**

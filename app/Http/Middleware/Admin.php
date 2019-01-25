@@ -18,7 +18,7 @@ class Admin
     {
         $user = $request->user();
  
-        if ($user && $user->Admin())
+        if ($user->Admin())
         {
             return $next($request);
         }

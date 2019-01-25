@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use DB;
 use Illuminate\Http\Request;
 use App\Model\Event;
 use App\Model\Picture;
@@ -51,13 +52,12 @@ class EventController extends Controller
     }
     public function inscrire(Request $request)
     {
-        $user = Auth::user()->id;
-        $event = Event::all();
-        //dd($event);
+        $user = $request->user()->id;
+        $ev = DB::table('events')->whereId($user)->first();
 
         ToRegister::create([
            'id_user' => $user,
-           'id_event' => $event->id,
+           'id_event' => $ev->id,
        ]);
        
     }
