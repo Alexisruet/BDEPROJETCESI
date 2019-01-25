@@ -59,7 +59,9 @@ class EventController extends Controller
            'id_user' => $user,
            'id_event' => $ev->id,
        ]);
-       
+
+       return $this->showEvents($request);
+
     }
     public function showEvents(Request $request)
     {
