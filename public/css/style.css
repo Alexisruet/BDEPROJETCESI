@@ -197,7 +197,35 @@ footer a:hover {
 	left: 130px;
 	right: 0;
 	bottom: 0;
-	background: #505050;
-	color: #fff;
+	background: rgba(109, 137, 213, 0.5);
+	color: black;
 	padding: 10px 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	border-radius: 10px;
+}
+
+#createIdea{
+	border-radius: 20px;
+	border: solid 2px #6D89D5;
+	color: #6D89D5;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#ideaValidate{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#titreCI{
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#desCI{
+	font-weight: bold;
+	font-size: 17px;
 }
