@@ -23,16 +23,25 @@
 	      </div>
 			</div>
       <div class="col-md-3">
-				<div class="link-with-pupup">
-        	<button type="button linky" class="btn link btn-light" id="more-infos">
-						Plus d'infos
-			 		</button>
-						<div class="popup">
-							<div class="box">{{ $idea->description }}</div>
-						</div>
+				<div class="row">
+					<div class="link-with-pupup">
+						<button type="button linky" class="btn link btn-light" id="more-infos">
+							Plus d'infos
+						</button>
+							<div class="popup">
+								<div class="box">{{ $idea->description }}</div>
+							</div>
+					</div>
+					<div class="dropdown Dropdown-ideas">
+						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
+							<img src="img/arrow.png" alt=""></button>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="report">Signaler</a></li>
+							<li><a href="#" id="transform">Transformer en événement</a></li>
+						</ul>
+					</div>
 				</div>
       </div>
-
 
       <div class="col-md-2"></div>
       <div class="col-md-8">
@@ -43,13 +52,13 @@
       <div class="col-md-2"></div>
       <div class="col-md-9 row" id="logosLikeBar">
         <div class="col-md-2">
-          <img src="img/comment.png" alt="comment">
+        	<a href="#"> <img src="img/comment.png" alt=""></a>
         </div>
         <div class="col-md-2">
-          <img src="img/retweet.png" alt="retweet">
+        	<a href="#"> <img src="img/retweet.png" alt=""></a>
         </div>
         <div class="col-md-2">
-          <img src="img/like.png" alt="like">&nbsp21
+          <a href="#"> <img src="img/like.png" alt="">200k</a>
         </div>
       </div>
 			<div class="col-md-1"></div>
