@@ -219,7 +219,7 @@ footer a:hover {
 	margin-bottom: 10px;
 	background-color: #6D89D5;
 	font-family: Helvetica, Arial, sans-serif;
-	color: white; 
+	color: white;
 }
 
 #titreCI{
@@ -228,7 +228,7 @@ footer a:hover {
 	font-size: 17px;
 }
 
-#desCI{
+.desCI{
 	font-weight: bold;
 	font-size: 17px;
 }
@@ -241,4 +241,9 @@ footer a:hover {
 	text-align: justify;
 	margin-bottom: 300px;
 	margin-top: 100px;
+}
+
+#addPic, #fichier{
+	margin-top: 20px;
+	margin-right: 10px;
 }

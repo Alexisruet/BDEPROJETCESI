@@ -14,7 +14,7 @@
 				</div>
 					<div class="">
 						<div class="input-field">
-							<label for="exampleFormControlTextarea1" id="desCI">Description de votre idée :</label>
+							<label for="exampleFormControlTextarea1" class="desCI" >Description de votre idée :</label>
 							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Décrire votre idée" name='description' form='form' required></textarea>
 						</div>
 						<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Valider</button>
