@@ -13,7 +13,7 @@ class ToRegister extends Migration
      */
     public function up()
     {
-        Schema::create('to_register', function (Blueprint $table) {
+        Schema::create('to_registers', function (Blueprint $table) {
             $table->unsignedInteger('id_event');
             $table->foreign('id_event')->references('id')->on('events');
             $table->unsignedInteger('id_user');

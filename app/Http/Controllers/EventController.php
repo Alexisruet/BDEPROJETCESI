@@ -6,6 +6,7 @@ use Auth;
 use Illuminate\Http\Request;
 use App\Model\Event;
 use App\Model\Picture;
+use App\Model\ToRegister;
 
 class EventController extends Controller
 {
@@ -48,7 +49,17 @@ class EventController extends Controller
         return $this->showEvents($request);
             
     }
+    public function inscrire(Request $request)
+    {
+        $user = Auth::user()->id;
+        $event = Event::all();
+        //dd($event);
 
+        ToRegister::create([
+           'id_user' => $user,
+           'id_event' => $event->id,
+       ]);
+    }
     public function showEvents(Request $request)
     {
         $data["events"] = Event::all();
