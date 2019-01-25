@@ -74,13 +74,7 @@
     margin-bottom: 20px;
 }
 
-#navShop, #leftShop, #contentShop {
-    border: black solid 1px;
-}
-
 #basketShop img {
-    margin-top: 15px;
-    margin-bottom: 15px;
     width: 40px;
     height: 40px;
 }
@@ -89,14 +83,77 @@
     font-weight: bold;
 }
 
-#navShop .navShop-item {
-    margin-top: 20px;
-}
-
 #carouselShop {
     width: 260px;
     height: 260px;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#Prix1 {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#Prix2 {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+#SalesTitle {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+#leftShop {
+    background-color: #DCDCDC;
+    border-right: solid 1px black;
+}
+
+#basketShop button {
+    background-color: white;
+    border-color: transparent;
+}
+
+#basketShop img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#navShop {
+    background-color: #6D89D5;
+}
+
+.sales {
+    margin-top: 40px;
+}
+
+.shop-item {
+    margin: auto;
+    margin-bottom: 80px;
+    width: 18rem;
+}
+
+.input-group button, .form-group label, #basketShop button {
+    color: black;
+    font-family: font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.input-group button {
+    border: solid grey 0.5px;
+    background-color: #DCDCDC;
+}
+
+.CardCarou {
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }

@@ -2,7 +2,7 @@
 
 @section('main')
 <div class="row shop">
-  <div class="col-md-10" id="navShop">
+  <div class="col-md-12" id="navShop">
     <div class="row">
       <div class="col-md-1"> </div>
       <div class="col-md-3">
@@ -40,12 +40,8 @@
             </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-2" id="basketShop">
-    <div class="container row">
       <div class="col-md-1"> </div>
-      <div class="col-md-2">
+      <div class="col-md-1 navShop-item" id="basketShop">
         <button type="button" class="btn btn-light" name="button" href="basket"><img src="img/panier.png" alt="panier">Panier</button>
       </div>
     </div>
@@ -53,43 +49,100 @@
 
   <div class="col-md-2" id="leftShop">
 
-
-    <div class="card" style="width: 18rem;">
-      <h5 class="card-title">PROMO DE LA SEMAINE</h5>
-
-      <div class="card-body">
-        <p class="card-text">A vendre : le pire dev back du CESI. 10 balles</p>
+    <div class="card-body row">
+      <div class="col-md-12  sales">
+        <h5 class="card-title" id="SalesTitle">PROMO DE LA SEMAINE</h5>
+      </div>
+      <div class="col-md-12">
+        <img src="img/pull1.png" alt="Item en promo">
+      </div>
+      <div class="col-md-6">
+        <p class="card-text" id="Prix1">Prix : <strike>30€</strike></p>
+      </div>
+      <div class="col-md-6">
+        <p class="card-text" id="Prix2">20€</p>
       </div>
     </div>
   </div>
-  <div class="col-md-8 shop">
-        <div id="carouselShop" class="carousel slide  carousel-fade" data-ride="carousel">
-          <div class="carousel-inner " role="listbox">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/pull1.png" alt="First slide">
+
+
+  <div class="col-md-10 shop">
+    <div class="row shopCards">
+
+      <div class="col-md-12">
+        <div class="card w-50 CardCarou">
+            <h5 class="card-title">Articles </h5>
+          <div class="carousel slide  carousel-fade" id="carouselShop" data-ride="carousel">
+            <div class="carousel-inner " role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/pull1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/pull2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/pull3.png" alt="Second slide">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/pull2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/pull3.png" alt="Second slide">
-            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselShop" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselShop" data-slide-to="1"></li>
+              <li data-target="#carouselShop" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#carouselShop" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselShop" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <ol class="carousel-indicators">
-            <li data-target="#carouselShop" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselShop" data-slide-to="1"></li>
-            <li data-target="#carouselShop" data-slide-to="2"></li>
-          </ol>
-          <a class="carousel-control-prev" href="#carouselShop" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselShop" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
-  <div class="col-md-2" id="rightShop"> </div>
+
+      <div class="col-md-4 ">
+        <div class="card shop-item">
+          <img class="card-img-top" src="img/pull1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Item 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shop-item">
+          <img class="card-img-top" src="img/pull2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Item 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shop-item">
+          <img class="card-img-top" src="img/pull3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Item 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shop-item">
+          <img class="card-img-top" src="img/sancho.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Item 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 @endsection
