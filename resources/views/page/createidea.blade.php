@@ -1,25 +1,25 @@
 @extends('template')
 
 @section('main')
+	<div class="contain-cIdea row" id="bodyCI">
+		<div class="col-md-4">
 
-<div class="container">
-        <div class="row">
-            <div class="col s6">
-                <form action="{{ route('createIdea') }}" method='POST' id = 'form'>
-                {{csrf_field()}}
-                    <div class="col s6 push-s3">
-
-										<input placeholder="Titre de l'idée" class="center color-text" type='text' name='title' id='title' required></input>
-											<br>
-										<input placeholder="Catégorie de l'idée" class="center color-text" type='text' name='category' id='category' required></input>
-                        <div class="input-field">
-                            <textarea placeholder="Décrire votre idée" style="font-size: 20px;" name='description' form='form' required></textarea>
-                        </div>
-                        <button class="waves-effect waves-light btn" type='submit'>Valider</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
+		</div>
+		<div class="col-md-3" id="yopLaBoum">
+			<form class="" action="{{ route('createIdea') }}" method='POST' id = 'form'>
+								{{csrf_field()}}
+				<div class="" id="titreCI">
+					<label for="title">Titre de votre idée :</label>
+					<input placeholder="Titre de l'idée" class="form-control" type='text' name='title' id='title' required></input>
+				</div>
+					<div class="">
+						<div class="input-field">
+							<label for="exampleFormControlTextarea1" id="desCI">Description de votre idée :</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Décrire votre idée" name='description' form='form' required></textarea>
+						</div>
+						<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Valider</button>
+					</div>
+		</form>
+		</div>
+	</div>
 @endsection

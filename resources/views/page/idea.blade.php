@@ -3,6 +3,7 @@
 @section('main')
 
 <div class="container idea">
+
 	@foreach ($ideas as $idea)
 
   <div class="card w-75" id="card">
@@ -15,7 +16,7 @@
 	      <div id="tag">
 					<?php
 						$idUser = $idea->id_user;
-						$name = DB::table('users')->whereId($idUser)->first();
+            $name = DB::table('users')->whereId($idUser)->first();
 					?>
 	          <h5>{{ $name->name }} {{ $name->surname }} </h5>
 	          <p>&#64;{{ $name->surname }}{{ $name->name }}</p>
@@ -56,5 +57,8 @@
     </div>
   </div>
 	@endforeach
+	<a href="/idea"><button type="button" class="btn btn-light" id="createIdea" >
+		Proposez votre idée
+	</button></a>
 </div>
 @endsection
