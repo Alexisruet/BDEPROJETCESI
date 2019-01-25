@@ -1,6 +1,7 @@
 <?php
 
 use App\Model\Idea;
+use App\Model\Product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,8 @@ Route::get('/', function () {
     return view('/home');
 });
 
+
+
 Route::get('/mentionslgl', function () {
     return view('page/mentionslgl');
 });
@@ -30,6 +33,8 @@ Route::get('/idea', function () {
 
 Auth::routes();
 
+Route::get('/tets', 'ProductController@index')->name("product");
+Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
