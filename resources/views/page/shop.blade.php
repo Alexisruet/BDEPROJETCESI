@@ -71,7 +71,7 @@
 
 
   <div class="col-md-8 shop">
-        <div class="carousel slide  carousel-fade" data-ride="carousel">
+        <div class="carousel slide  carousel-fade" id="carouShop" data-ride="carousel">
           <div class="carousel-inner " role="listbox">
             <div class="carousel-item active">
               <img class="d-block w-100" src="img/pull1.png" alt="First slide">
