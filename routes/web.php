@@ -17,9 +17,14 @@ Route::get('/', function () {
     return view('/home');
 });
 
-Route::get('/', [
+Route::get('/a', [
     'uses' => 'ProductController@showProducts',
     'as' => 'product.index'
+]);
+
+Route::get('/remove/{id}', [
+    'uses' => 'ProductController@getRemoveItem',
+    'as' => 'product.remove'
 ]);
 
 Route::get('/shopping-cart', [

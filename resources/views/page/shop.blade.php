@@ -46,7 +46,14 @@
     <div class="container row">
       <div class="col-md-1"> </div>
       <div class="col-md-2">
-        <button type="button" class="btn btn-light" name="button" href="basket"><img src="img/panier.png" alt="panier">Panier</button>
+
+      <li>
+                    <a href="{{ route('product.shoppingCart') }}">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                        <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+                    </a>
+                </li>
+        
       </div>
     </div>
   </div>
