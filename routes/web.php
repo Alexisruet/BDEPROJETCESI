@@ -17,7 +17,24 @@ Route::get('/', function () {
     return view('/home');
 });
 
+Route::get('/', [
+    'uses' => 'ProductController@showProducts',
+    'as' => 'product.index'
+]);
 
+Route::get('/shopping-cart', [
+    'uses' => 'ProductController@getCart',
+    'as' => 'product.shoppingCart'
+]);
+
+Route::get('/add-to-cart/{id}', [
+    'uses'=>'ProductController@getAddToCart',
+    'as'=> 'product.addToCart'
+]);
+
+Route::get('/magasin', function () {
+    return view('page/shoppps');
+});
 
 
 Route::get('/mentionslgl', function () {
@@ -39,6 +56,9 @@ Route::get('/contact', 'GestionController@contact')->name('contact');
 Route::get('/events/{id}', 'EventController@inscrire');
 
 
+Route::get('/product', 'ProductController@index')->name("product");
+Route::post('/addproduct', 'ProductController@create')->name('addproduct');
+Route::get('/magasin', 'ProductController@showProducts')->name('showProduct');
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaController@index')->name("idea");
@@ -59,6 +79,6 @@ Route::middleware(['salarie'])->group(function(){
 Route::middleware(['admin'])->group(function(){
     Route::get('/report', 'ReportController@indexAdmin')->name('report');
     Route::get('/gestion', 'GestionController@index')->name('gestion');
-    Route::get('/product', 'ProductController@index')->name("product");
-    Route::post('/addproduct', 'ProductController@create')->name('addproduct');
+  //  Route::get('/product', 'ProductController@index')->name("product");
+  //  Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 });
