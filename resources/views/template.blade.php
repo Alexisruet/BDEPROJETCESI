@@ -124,11 +124,7 @@
 								<a href="contact">Email</a>
 							</li>
 							<li>
-<<<<<<< HEAD
 								<a href="contact">Adresse</a>
-=======
-								<a href="ontact">Adresse</a>
->>>>>>> 74c9960a23bd905f94298f2e41e877bc1aa5ebb7
 							</li>
 						</ul>
 
