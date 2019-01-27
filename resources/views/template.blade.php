@@ -116,10 +116,13 @@
 
 						<ul class="list-unstyled">
 							<li>
-								<a href="#!">Link 1</a>
+								<a href="Contact">Téléphone</a>
 							</li>
 							<li>
-								<a href="#!">Link 2</a>
+								<a href="Contact">Email</a>
+							</li>
+							<li>
+								<a href="Contact">Adresse</a>
 							</li>
 						</ul>
 

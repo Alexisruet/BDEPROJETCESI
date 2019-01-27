@@ -3,6 +3,7 @@
 @section('main')
 
 <div class="container idea">
+
 	@foreach ($ideas as $idea)
 
   <div class="card w-75" id="card">
@@ -56,5 +57,8 @@
     </div>
   </div>
 	@endforeach
+	<a href="/idea"><button type="button" class="btn btn-light" id="createIdea" >
+		Proposez votre idée
+	</button></a>
 </div>
 @endsection

@@ -43,7 +43,7 @@
 			Nous vous invitons donc à rester polis et courtois. Vous avez la possibilité de contacter un membres du BDE
 		 	si vous avez des réclamations.</p>
 			<div class="imgWei">
-				<img src="img/wei.jpg" alt="journée d'intégration">
+				<img class="d-block w-75" src="img/wei.jpg" alt="journée d'intégration">
 			</div><br>
 			<p>Le BDE met également en place plusieurs associations pour occuper vos Jeudi après-midi, vous aurez
 			 le choix entre jouer aux jeux vidéo entre amis grâce à l'association AC/DC (association de coopération
