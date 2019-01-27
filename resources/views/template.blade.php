@@ -112,17 +112,19 @@
 				<div class="col-md-4 mb-md-0 md-4">
 
 						<!-- Links -->
-						<h5 class="text-uppercase"  id="TitleFooter">Contact</h5>
+						<h5 class="text-uppercase"  id="TitleFooter">
+							<a href="contact"> Contact </a>
+						</h5>
 
 						<ul class="list-unstyled">
 							<li>
-								<a href="Contact">Téléphone</a>
+								<a href="contact">Téléphone</a>
 							</li>
 							<li>
-								<a href="Contact">Email</a>
+								<a href="contact">Email</a>
 							</li>
 							<li>
-								<a href="Contact">Adresse</a>
+								<a href="contact">Adresse</a>
 							</li>
 						</ul>
 
@@ -133,7 +135,9 @@
 					<div class="col-md-4 mb-md-0 md-4">
 
 						<!-- Links -->
-						<h5 class="text-uppercase" id="TitleFooter" href="/page/mentionslgl">Mentions légales</h5>
+						<h5 class="text-uppercase" id="TitleFooter">
+							<a href="href=mentionslgl">Mentions légales</a>
+						</h5>
 
 						<ul class="list-unstyled">
 							<li>

@@ -66,7 +66,7 @@
     </div>
   </div>
 	@endforeach
-	<a href="/idea"><button type="button" class="btn btn-light" id="createIdea" >
+	<a href="idea"><button type="button" class="btn btn-light" id="createIdea" >
 		Proposez votre idée
 	</button></a>
 </div>
