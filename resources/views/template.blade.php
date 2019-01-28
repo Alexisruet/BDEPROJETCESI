@@ -40,7 +40,7 @@
 										ÉVÉNEMENT <span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<a class="dropdown-item" href="events" >
+										<a class="dropdown-item" href="pastevent" >
 											Passés
 										</a>
 										<a class="dropdown-item" href="futurevent" >

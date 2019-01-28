@@ -54,7 +54,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
-Route::get('/events', 'EventController@showEvents')->name('showEvent');
 Route::get('/home', 'HomeController@index')->name('connected');
 // Route::post('/eventss', 'EventController@commenter')->name('commenter');
 Route::get('/contact', 'GestionController@contact')->name('contact');
@@ -74,6 +73,8 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/idea', 'IdeaController@create')->name('createIdea');
     Route::post('/events', 'EventController@inscrire')->name('inscrire');
     Route::post('/eventss', 'EventController@commenter')->name('commenter');
+    Route::get('/futurevent','EventController@futurevent');
+    Route::get('/pastevent','EventController@pastevent');
 
     //events/{{ $event -> id}}"
 
