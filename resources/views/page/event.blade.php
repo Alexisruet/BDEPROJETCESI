@@ -12,13 +12,11 @@
 				</div>
 				<div>
           @foreach($pictures as $picture)
-          @if($picture->id_event == $event->id)
-
-						<div class="imgWei">
-							<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
-						</div>
-
-					@endif
+          	@if($picture->id_event == $event->id)
+							<div class="imgWei">
+								<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
+							</div>
+						@endif
           @endforeach
           <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
             {{csrf_field()}}
@@ -43,8 +41,8 @@
 
 	</div>
 	<!-- if you are admin-->
-	<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
-		Add event
-	</button></a>
+		<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
+			Add event
+		</button></a>
 </div>
 @endsection
