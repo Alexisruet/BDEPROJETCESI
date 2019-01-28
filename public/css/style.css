@@ -20,7 +20,7 @@
 }
 
 .idea {
-    margin: auto;
+    margin-bottom: 1px;
 }
 
 .upload {
@@ -37,6 +37,10 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 2vmin;
+}
+
+p{
+	    font-family: Helvetica, Arial, sans-serif;
 }
 
 #navbar2 {
@@ -204,7 +208,7 @@ footer a:hover {
 	border-radius: 10px;
 }
 
-#createIdea{
+#createIdea, #createEvent{
 	border-radius: 20px;
 	border: solid 2px #6D89D5;
 	color: #6D89D5;
@@ -247,3 +251,18 @@ footer a:hover {
 	margin-top: 20px;
 	margin-right: 10px;
 }
+
+.card{
+	background-color: #6D89D5;
+}
+
+#inscription{
+	margin: 5px;
+	margin-bottom: 25px;
+}
+
+ #commente{
+	 margin-top: -5px;
+	 margin-left: 5px;
+	 margin-bottom: 5px;
+ }
