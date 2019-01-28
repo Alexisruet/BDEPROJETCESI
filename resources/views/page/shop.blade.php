@@ -77,14 +77,14 @@
     </div>
   </div>
 
-  <div class="col-md-2" id="leftShop">
+  <div class="col-lg-2" id="leftShop">
 
     <div class="card-body row">
       <div class="col-md-12  sales">
         <h5 class="card-title" id="SalesTitle">PROMO DE LA SEMAINE</h5>
       </div>
       <div class="col-md-12">
-        <img src="img/pull1.png" alt="Item en promo">
+        <img class="d-block w-100" src="img/pull1.png" alt="Item en promo">
       </div>
       <div class="col-md-6">
         <p class="card-text" id="Prix1">Prix : <strike>30€</strike></p>
@@ -98,7 +98,7 @@
   <div class="col-md-10 shop">
     <div class="row shopCards">
       @foreach ($products as $product)
-      <div class="col-md-4 ">
+      <div class="col-xl-4 col-lg-6 ">
         <div class="card shop-item">
           <img class="card-img-top" src="img/{{ $product->urlImage }}" alt="Card image cap">
           <div class="card-body">

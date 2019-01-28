@@ -32,14 +32,31 @@
 								<div class="box">{{ $idea->description }}</div>
 							</div>
 					</div>
+
+					<?php 
+							$user = Auth::user()->id_grade;
+					?>
+
+					@if($user == 2)
 					<div class="dropdown Dropdown-ideas">
 						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
 							<img src="img/arrow.png" alt=""></button>
 						<ul class="dropdown-menu">
 							<li><a href="#" id="report">Signaler</a></li>
+						</ul>
+					</div>
+					@endif
+
+					@if($user == 3)
+					<div class="dropdown Dropdown-ideas">
+						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
+							<img src="img/arrow.png" alt=""></button>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="report">Supprimer</a></li>
 							<li><a href="#" id="transform">Transformer en événement</a></li>
 						</ul>
 					</div>
+					@endif
 				</div>
       </div>
 
