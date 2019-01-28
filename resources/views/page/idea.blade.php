@@ -42,7 +42,12 @@
 						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
 							<img src="img/arrow.png" alt=""></button>
 						<ul class="dropdown-menu">
-							<li><a href="#" id="report">Signaler</a></li>
+							<li><button id="report">Signaler</button></li>
+							<script>
+									document.querySelector("#report").onclick = function() { 
+									document.querySelector("#card").style.display=(window.getComputedStyle(document.querySelector('#card')).display=='none') ? "block" : "none"; 
+									}
+							</script>
 						</ul>
 					</div>
 					@endif
@@ -52,7 +57,7 @@
 						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
 							<img src="img/arrow.png" alt=""></button>
 						<ul class="dropdown-menu">
-							<li><a href="/delIdea/{{ $idea->id }}" id="report">Supprimer</a></li>
+							<li><a href="/delIdea/{{ $idea->id }}" id="del">Supprimer</a></li>
 							<li><a href="/idToEvent/{{ $idea->id }}" id="transform">Transformer en événement</a></li>
 						</ul>
 					</div>
