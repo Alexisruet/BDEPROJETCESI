@@ -5,9 +5,43 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model\Product;
 use App\Model\Picture;
+use Session;
+use App\Cart;
+
 
 class ProductController extends Controller
 {
+
+    public function getAddToCart(Request $request, $id) {
+
+            $product = Product::find($id);
+            $oldCart = Session::has('cart') ? Session::get('cart') : null;
+            $cart = new Cart($oldCart);
+            $cart->add($product, $product->id);
+            $request->session()->put('cart', $cart);
+            return redirect()->route('product.index');
+        
+    }
+    public function getRemoveItem($id) {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->removeItem($id);
+        if (count($cart->items) > 0) {
+            Session::put('cart', $cart);
+        } else {
+            Session::forget('cart');
+        }
+        return redirect()->route('product.shoppingCart');
+    }
+    public function getCart() {
+        if (!Session::has('cart')) {
+            return view('page/shopping-cart');
+        }
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        return view('page/shopping-cart', ['products' => $cart->items]);
+    }
+    
     public function index() {
 
         return view('addproduct');
@@ -56,7 +90,13 @@ class ProductController extends Controller
             'urlImage'=> $file->getClientOriginalName(),
 
         ]);
+        return $this->showProducts($request);
             
+    }
+    public function showProducts(Request $request)
+    {
+        $data["products"] = Product::all();
+        return view('page/shoppps', $data);
     }
 
 }

@@ -32,6 +32,12 @@
 				</button>
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ml-auto">
+
+
+
+						
+
+				
 								<li class="nav-item">
 									<a class="nav-link js-scroll-trigger" href="events">ÉVÉNEMENTS</a>
 								</li>
