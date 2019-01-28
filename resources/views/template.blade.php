@@ -162,7 +162,7 @@
 								<a href="mentionslgl#CondGen">Conditions générales</a>
 							</li>
 							<li>
-								<a href="#!">Conditions de vente</a>
+								<a href="mentionslgl#cgv">Conditions de vente</a>
 							</li>
 
 						</ul>
