@@ -3,7 +3,7 @@
 @section('main')
 
 <div class="container" id="shopie">
-
+	<h3>Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</h3>
 
     @foreach($products as $product)
 
@@ -32,8 +32,8 @@
     </ul>
 
     @endforeach
-								
-   
+
+
         <div class="col-md-4">
             <a href="/send"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
         </div>
@@ -44,11 +44,7 @@
                 <span class="custom-control-description">J'accepte les <a href="mentionslgl#cgv">Conditions générales de vente</a></span>
             </label>
         </div>
-<<<<<<< HEAD
     </form>
-=======
-    
->>>>>>> 6de90f5b4081e592c22b1f099e897fa17dd7fed3
 </div>
 
 
