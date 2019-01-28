@@ -2,53 +2,37 @@
 
 @section('main')
 
-@if(Session::has('cart'))
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                <ul class="list-group">
-                    @foreach($products as $product)
-                            <li class="list-group-item">
-                                <span class="badge">{{ $product['qty'] }}</span>
-                                <strong>{{ $product['item']['name'] }}</strong>
-                                <span class="label label-success">{{ $product['price'] }}</span>
-                               
-                                </div>
-                                <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-    Action
+<div class="container">
 
-    
-  </button>
-  <div class="dropdown dropup">
-  <a class="dropdown-item" href="{{ route('product.remove', ['id' => $product['item']['id']]) }}">Reduce All</a>
-  
-  </div>
-</div> 
-</div> 
-                               
-                               
-                                
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-               
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                <button type="button" class="btn btn-success">Checkout</button>
-            </div>
-        </div>
-    @else
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                <h2>No Items in Cart!</h2>
-            </div>
-        </div>
-    @endif
+  <h2>Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</h2>
+@foreach($products as $product)
 
-    @endsection
+  <ul class="list-group">
+    <li class="list-group-item col-md-12" >
+      <div class="row">
+
+        <div class="col-md-2">
+          <strong>Nom : {{ $product['item']['name'] }}</strong>
+        </div>
+        <div class="col-md-2">
+          <span class="label label-success">Prix : {{ $product['price'] }}</span>
+        </div>
+        <div class="col-md-2">
+          <span class="label label-succes">Quantité : {{ $product['qty'] }}</span>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <a href="{{ route('product.remove', ['id' => $product['item']['id']]) }}">
+            <button><i class="fas fa-times"></i>&nbspSupprimer</button>
+          </a>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+
+@endforeach
+<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button>
+</div>
+
+@endsection
