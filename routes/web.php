@@ -49,7 +49,7 @@ Route::get('/mentionslgl', function () {
 Route::get('/shop', function () {
     return view('page/shop');
 });
-
+Route::get('/send', 'MailController@send')->name('send');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -57,10 +57,11 @@ Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
 Route::get('/home', 'HomeController@index')->name('connected');
 Route::get('/eventss/{id}', 'EventController@commenter')->name('commenter');
 Route::get('/contact', 'GestionController@contact')->name('contact');
-Route::get('/events/{id}', 'EventController@inscrire');
+//Route::get('/events/{id}', 'EventController@inscrire');
 
 Route::get('/futurevent','EventController@futurevent');
 Route::get('/pastevent','EventController@pastevent');
+Route::get('/send', 'MailController@send')->name('send');
 
 
 
