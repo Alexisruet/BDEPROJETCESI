@@ -9,24 +9,22 @@
 				<div class="card-body">
 					<h3>{{ $event->title }}</h3>
 					<p>{{ $event->description }}</p>
+					
+                </a>
 				</div>
 				<div>
           @foreach($pictures as $picture)
-          @if($picture->id_event == $event->id)
-
-						<div class="imgWei">
-							<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
-						</div>
-
-					@endif
+          	@if($picture->id_event == $event->id)
+							<div class="imgWei">
+								<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
+							</div>
+						@endif
           @endforeach
-          <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
-            {{csrf_field()}}
-            <a href="/events/{{ $event -> id}}">
-            <button type="submit" class="btn link btn-dark" id="inscription">Pour s'inscrire</button>
-                </a>
-          </form>
         </div>
+		<div>
+					<a href="/events/{{ $event -> id}}">
+            		<button type="submit" class="btn link btn-dark" id="inscription">Pour s'inscrire</button>
+					</div>
 
 				<form action="{{ route('commenter') }}" method='POST' id='gg' enctype="multipart/form-data">
 					{{csrf_field()}}
@@ -43,8 +41,8 @@
 
 	</div>
 	<!-- if you are admin-->
-	<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
-		Add event
-	</button></a>
+		<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
+			Add event
+		</button></a>
 </div>
 @endsection

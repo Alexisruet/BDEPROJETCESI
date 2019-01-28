@@ -62,7 +62,7 @@ class EventController extends Controller
            'id_event' => $id,
        ]);
 
-       return $this->showEvents($request);
+       return redirect('/');
 
     }
 
