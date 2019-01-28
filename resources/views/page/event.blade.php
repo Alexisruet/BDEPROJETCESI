@@ -11,23 +11,22 @@
 					<p>{{ $event->description }}</p>
 				</div>
 				<div>
-        
-        
-        
-                    @foreach($pictures as $picture)
-                    @if($picture->id_event == $event->id)
-                    <img src="img/{{ $picture->url }}">
-                    @endif
-                    @endforeach
-                    <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
-                {{csrf_field()}}
-                <a
-                href="/events/{{ $event -> id}}"
-                <button type="submit"id="inscription">Pour s'inscrire</button>
+          @foreach($pictures as $picture)
+          @if($picture->id_event == $event->id)
+
+						<div class="imgWei">
+							<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
+						</div>
+
+					@endif
+          @endforeach
+          <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
+            {{csrf_field()}}
+            <a href="/events/{{ $event -> id}}">
+            <button type="submit" class="btn link btn-dark" id="inscription">Pour s'inscrire</button>
                 </a>
-                
-                    </form>
-                    </div> 
+          </form>
+        </div>
 
 				<form action="{{ route('commenter') }}" method='POST' id='gg' enctype="multipart/form-data">
 					{{csrf_field()}}
