@@ -4,7 +4,7 @@
 
 <div class="container" id="shopie">
 
-    <h2>Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</h2>
+
     @foreach($products as $product)
 
     <ul class="list-group">
