@@ -10,9 +10,15 @@
         <p id="p1"> Bienvenue sur le site du BDE </br> CESI Bordeaux </p>
       </div>
     </div>
-    <!--<div class="carousel-item">
-      <img class="d-block w-100" src="img/social.png" alt="Second slide">
-    </div>-->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/boutique2.png" alt="Second slide">
+      <div class="carousel-caption d-md-block" id="Welcome" href="shop">
+        <p id="p1"> Visitez notre boutique </p>
+        <button type="button" class="btn btn-dark" name="button" id="buttonCarou">
+          <a href="shop">Par ici</a>
+        </button>
+      </div>
+    </div>
   </div>
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

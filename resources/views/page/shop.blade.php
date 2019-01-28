@@ -92,7 +92,7 @@
         <p class="card-text" id="Prix1">Prix : <strike>30€</strike></p>
       </div>
       <div class="col-md-6">
-        <p class="card-text" id="Prix2">20€</p>
+        <p class="card-text" id="Prix2">25€</p>
       </div>
     </div>
   </div>
