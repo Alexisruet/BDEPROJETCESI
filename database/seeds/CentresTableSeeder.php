@@ -23,6 +23,11 @@ class CentresTableSeeder extends Seeder
             ]);
             
             DB::table('centres')->insert([
+                // 'id' => 3,
+                 'city' => 'Pau' ,  
+             ]);
+
+            DB::table('centres')->insert([
 	           // 'id' => 3,
 	            'city' => 'Paris' ,  
             ]);
