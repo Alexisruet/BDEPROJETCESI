@@ -52,7 +52,7 @@
 						<button class="btn" id="Dropdown-ideas" type="button" data-toggle="dropdown">
 							<img src="img/arrow.png" alt=""></button>
 						<ul class="dropdown-menu">
-							<li><a href="#" id="report">Supprimer</a></li>
+							<li><a href="/delIdea/{{ $idea->id }}" id="report">Supprimer</a></li>
 							<li><a href="#" id="transform">Transformer en événement</a></li>
 						</ul>
 					</div>

@@ -40,6 +40,11 @@ class IdeaController extends Controller
         return view('page/idea', $data);
     }
 
+    public function delIdea(Request $request, $id){
+
+        $idea = Idea::where('id', '=', $id)->delete();
+        return redirect()->route('showIdea');
+    }
 
     /**
      * Store a newly created resource in storage.

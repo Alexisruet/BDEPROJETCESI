@@ -83,6 +83,7 @@ Route::middleware(['admin'])->group(function(){
 		Route::get('/event', 'EventController@index')->name('event');
 		Route::post('/event', 'EventController@create')->name('createEvent');
         Route::get('/gestion', 'GestionController@index')->name('gestion');
+        Route::get('/delIdea/{id}', 'IdeaController@delIdea');
   //  Route::get('/product', 'ProductController@index')->name("product");
   //  Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 });
