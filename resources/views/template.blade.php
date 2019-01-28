@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -21,84 +22,85 @@
 	<title>BDE du Cesi Bordeaux</title>
 
 </head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-md" id="navbar1">
-				<a class="navbar-brand js-scroll-trigger" href="/">
-					<img src="img/lillogo_swag.png" alt="logo">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-					&#9776;
-				</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-						<ul class="navbar-nav ml-auto">
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md" id="navbar1">
+			<a class="navbar-brand js-scroll-trigger" href="/">
+				<img src="img/lillogo_swag.png" alt="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				&#9776;
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<ul class="navbar-nav ml-auto">
 
 
-							<div class="dropdown">
-								<li class="nav-item dropdown ">
-									<a id="navbarDropdownEve" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										ÉVÉNEMENT <span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<a class="dropdown-item" href="pastevent" >
-											Passés
-										</a>
-										<a class="dropdown-item" href="futurevent" >
-											À venir
-										</a>
-									</ul>
-									</li>
-								</div>
-
-								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="ideas">BOÎTE À IDÉES </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="shop" id="item1" >BOUTIQUE </a>
-								</li>
-								<li class="nav-item">
-									<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
-								</li>
-
-							@guest
-									<li class="nav-item">
-											<a class="nav-link" href="{{ route('login') }}">SE CONNECTER</a>
-									</li>
-									@if (Route::has('register'))
-											<li class="nav-item">
-													<a class="nav-link" href="{{ route('register') }}">S'INSCRIRE</a>
-											</li>
-											<li class="nav-item">
-												<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
-											</li>
-									@endif
-							@else
-							<div class="dropdown">
-								<li class="nav-item dropdown">
-									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										{{ Auth::user()->name }} <span class="caret"></span>
-									</a>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-																{{ __('Logout') }}
-										</a>
-											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-												@csrf
-											</form>
-										</div>
-									</li>
-								</div>
-							@endguest
-
-						</ul>
+					<div class="dropdown">
+						<li class="nav-item dropdown ">
+							<a id="navbarDropdownEve" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								ÉVÉNEMENT <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="pastevent">
+									Passés
+								</a>
+								<a class="dropdown-item" href="futurevent">
+									À venir
+								</a>
+							</ul>
+						</li>
 					</div>
-			</nav>
-		</header>
-		<main>
-				@yield('main')
-		</main>
 
-			<!-- Footer -->
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="ideas">BOÎTE À IDÉES </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="shop" id="item1">BOUTIQUE </a>
+					</li>
+					<li class="nav-item">
+						<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
+					</li>
+
+					@guest
+					<li class="nav-item">
+						<a class="nav-link" href="{{ route('login') }}">SE CONNECTER</a>
+					</li>
+					@if (Route::has('register'))
+					<li class="nav-item">
+						<a class="nav-link" href="{{ route('register') }}">S'INSCRIRE</a>
+					</li>
+					<li class="nav-item">
+						<p class="nav-link js-scroll-trigger" href="">&nbsp</p>
+					</li>
+					@endif
+					@else
+					<div class="dropdown">
+						<li class="nav-item dropdown">
+							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								{{ Auth::user()->name }} <span class="caret"></span>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+									{{ __('Logout') }}
+								</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									@csrf
+								</form>
+							</div>
+						</li>
+					</div>
+					@endguest
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		@yield('main')
+	</main>
+
+	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">
 
 		<!-- Footer Links -->
@@ -112,9 +114,9 @@
 					<div class="container" id="logos">
 						<!-- Content -->
 						<h5 class="text-uppercase">A propos</h5>
-						<a href="https://www.facebook.com/bdecesibdx/" id="logoFacebook"> <i class="fab fa-facebook fa-2x">  </i> </a>
-						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-2x">  </i> </a>
-						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-2x">  </i> </a>
+						<a href="https://www.facebook.com/bdecesibdx/" id="logoFacebook"> <i class="fab fa-facebook fa-2x"> </i> </a>
+						<a href="https://www.instagram.com/bde_cesi_bdx/" id="logoInsta"> <i class="fab fa-instagram fa-2x"> </i> </a>
+						<a href="https://twitter.com/BdeCesiBordeaux" id="logoTwitter"> <i class="fab fa-twitter fa-2x"> </i> </a>
 
 					</div>
 
@@ -126,48 +128,48 @@
 				<!-- Grid column -->
 				<div class="col-md-4 mb-md-0 md-4">
 
-						<!-- Links -->
-						<h5 class="text-uppercase"  id="TitleFooter">
-							<a href="contact"> Contact </a>
-						</h5>
+					<!-- Links -->
+					<h5 class="text-uppercase" id="TitleFooter">
+						<a href="contact"> Contact </a>
+					</h5>
 
-						<ul class="list-unstyled">
-							<li>
-								<a href="contact">Téléphone</a>
-							</li>
-							<li>
-								<a href="contact">Email</a>
-							</li>
-							<li>
-								<a href="contact">Adresse</a>
-							</li>
-						</ul>
+					<ul class="list-unstyled">
+						<li>
+							<a href="contact">Téléphone</a>
+						</li>
+						<li>
+							<a href="contact">Email</a>
+						</li>
+						<li>
+							<a href="contact">Adresse</a>
+						</li>
+					</ul>
 
-					</div>
-					<!-- Grid column -->
+				</div>
+				<!-- Grid column -->
 
-					<!-- Grid column -->
-					<div class="col-md-4 mb-md-0 md-4">
+				<!-- Grid column -->
+				<div class="col-md-4 mb-md-0 md-4">
 
-						<!-- Links -->
-						<h5 class="text-uppercase" id="TitleFooter">
-							<a href="mentionslgl">Mentions légales</a>
-						</h5>
+					<!-- Links -->
+					<h5 class="text-uppercase" id="TitleFooter">
+						<a href="mentionslgl">Mentions légales</a>
+					</h5>
 
-						<ul class="list-unstyled">
-							<li>
-								<a href="mentionslgl#RGPD">RGPD</a>
-							</li>
-							<li>
-								<a href="mentionslgl#CondGen">Conditions générales</a>
-							</li>
-							<li>
-								<a href="mentionslgl#cgv">Conditions de vente</a>
-							</li>
+					<ul class="list-unstyled">
+						<li>
+							<a href="mentionslgl#RGPD">RGPD</a>
+						</li>
+						<li>
+							<a href="mentionslgl#CondGen">Conditions générales</a>
+						</li>
+						<li>
+							<a href="mentionslgl#cgv">Conditions de vente</a>
+						</li>
 
-						</ul>
-					</div>
-					<!-- Grid column -->
+					</ul>
+				</div>
+				<!-- Grid column -->
 			</div>
 			<!-- Grid row -->
 		</div>
@@ -182,11 +184,12 @@
 	</footer>
 	<!-- Footer -->
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="js/sc.js"></script>
-		<script src="js/cookiechoices.js"></script>
-		<script src="js/validation.js"></script>
-	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/sc.js"></script>
+	<script src="js/cookiechoices.js"></script>
+	<script src="js/validation.js"></script>
+</body>
+
 </html>

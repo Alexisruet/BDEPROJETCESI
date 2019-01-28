@@ -38,7 +38,6 @@ class EventController extends Controller
             'id_user' => $user,
             'date'=> $request->get('date'),
             //'date'=> '2022/10/10',
-
         ]);
 
 
@@ -59,7 +58,7 @@ class EventController extends Controller
     {
         $user = $request->user()->id;
         //dd($user);
-        
+
 
         ToRegister::create([
            'id_user' => $user,
@@ -92,7 +91,7 @@ class EventController extends Controller
 
         $data['events'] = Event::where('date', '>=', Carbon::now())->get();
         $data['pictures'] = Picture::all();
-        
+
         return view('page/futurevent', $data);
     }
 
