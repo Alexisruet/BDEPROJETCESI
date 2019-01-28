@@ -19,7 +19,7 @@ class ProductController extends Controller
             $cart = new Cart($oldCart);
             $cart->add($product, $product->id);
             $request->session()->put('cart', $cart);
-            return redirect()->route('product.index');
+           return redirect('/shop');
 
     }
     public function getRemoveItem($id) {
