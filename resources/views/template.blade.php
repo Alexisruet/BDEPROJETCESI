@@ -35,8 +35,8 @@
 
 
 							<div class="dropdown">
-								<li class="nav-item dropdown">
-									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<li class="nav-item dropdown ">
+									<a id="navbarDropdownEve" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										ÉVÉNEMENT <span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
