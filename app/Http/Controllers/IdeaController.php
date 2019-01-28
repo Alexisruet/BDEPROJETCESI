@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Idea;
 use Illuminate\Http\Request;
+use App\Model\Event;
+use App\Model\Picture;
 use Auth;
 
 class IdeaController extends Controller
@@ -45,6 +47,31 @@ class IdeaController extends Controller
         $idea = Idea::where('id', '=', $id)->delete();
         return redirect()->route('showIdea');
     }
+
+
+		public function idToEvent(Request $request, $id){
+
+			$iIdea = Idea::where('id', '=', $id)->first();
+
+			$event = Event::create([
+					'title' => $iIdea->title,
+					'description' => $iIdea->description,
+					'category' => 'test',
+					'id_user' => $iIdea->id_user,
+					'date'=> '2022/10/10',
+
+			]);
+			Picture::create([
+					'id_user'=> $iIdea->id_user,
+					'id_event' => $event->id,
+					'url'=> "nabil.jpg",
+
+			]);
+
+			$idea = Idea::where('id', '=', $id)->delete();
+			return redirect()->route('showIdea');
+		}
+
 
     /**
      * Store a newly created resource in storage.
