@@ -86,7 +86,7 @@ class EventController extends Controller
 
         $data['events'] = Event::where('date', '>=', Carbon::now())->get();
         $data['pictures'] = Picture::all();
-        return view('page/event', $data);
+        return view('page/futurevent', $data);
     }
 
     public function pastevent(){

@@ -22,10 +22,7 @@
           @endforeach
 
         </div>
-		<div>
-					
-            		<button type="submit" class="btn link btn-dark" id="inscription"><a href="/events/{{ $event -> id}}">Pour s'inscrire</a></button>
-					</div>
+		
 
 				<form action="{{ route('commenter') }}" method='POST' id='gg' enctype="multipart/form-data">
 					{{csrf_field()}}
