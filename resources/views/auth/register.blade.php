@@ -58,12 +58,35 @@
 
                             <div class="col-md-6">
                                 <select name="centre" class="form-control">
-                                    <option value="1">Bordeaux</option>
-                                    <option value="2">Rouen</option>
-                                    <option value="3">Pau</option>
-                                    <option value="4">Paris</option>
+                                    <option value="1">Aix-en-Provence</option>
+                                    <option value="2">Angoulême</option>
+                                    <option value="3">Arras</option>
+                                    <option value="4">Bordeaux</option>
+																		<option value="5">Brest</option>
+																		<option value="6">Caen</option>
+																		<option value="7">Châteauroux</option>
+																		<option value="8">Dijon</option>
+																		<option value="9">Grenoble</option>
+																		<option value="10">La Rochelle</option>
+																		<option value="11">Le Mans</option>
+																		<option value="12">Lille</option>
+																		<option value="13">Lyon</option>
+																		<option value="14">Montpellier</option>
+																		<option value="15">Nancy</option>
+																		<option value="16">Nantes</option>
+																		<option value="17">Nice</option>
+																		<option value="18">Orléans</option>
+																		<option value="19">Paris Nanterre</option>
+																		<option value="20">Pau</option>
+																		<option value="21">Reims</option>
+																		<option value="22">Rouen</option>
+																		<option value="23">Saint-Nazaire</option>
+																		<option value="24">Strasbourg</option>
+																		<option value="25">Toulouse</option>
+
+
                                 </select>
-                        
+
                                 @if ($errors->has('centre'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('centre') }}</strong>
