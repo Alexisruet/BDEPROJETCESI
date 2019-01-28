@@ -33,7 +33,7 @@
 							</div>
 					</div>
 
-					<?php 
+					<?php
 							$user = Auth::user()->id_grade;
 					?>
 
@@ -75,7 +75,7 @@
         	<a href="#"> <img src="img/retweet.png" alt=""></a>
         </div>
         <div class="col-md-2">
-          <a href="#"> <img src="img/like.png" alt="">200k</a>
+          <a href="#" onclick="like()"> <img src="img/like.png" id="hearth" alt="icone de fav"></a>200k
         </div>
       </div>
 			<div class="col-md-1"></div>
