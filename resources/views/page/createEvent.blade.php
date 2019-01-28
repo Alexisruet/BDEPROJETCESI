@@ -22,8 +22,14 @@
 
 								<input type="file" name="filename" class="form-control" id="fichier"></input>
 							</div>
+
+							<div class="input-field">
+								<label for="date">Date de l'événement </label>
+						<input type="text" name="date"id="date">
+							</div>
 							<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Valider</button>
 						</div>
+						
 			</form>
 			</div>
 		</div>
