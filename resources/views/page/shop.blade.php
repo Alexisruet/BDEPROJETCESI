@@ -7,9 +7,13 @@
       <div class="col-md-1"> </div>
       <div class="col-md-3">
         <div class="input-group mb-3 navShop-item">
-          <input type="text" class="form-control"  aria-describedby="basic-addon2">
+          
+          <form class="" action="{{ ('rechercher') }}" method='post' id = "rechercher" enctype="multipart/form-data">
+									{{csrf_field()}}
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button">Rechercher</button>
+          <input type="text" class="form-control"  aria-describedby="basic-addon2">
+          <button class="btn btn-outline-secondary" type="button">Rechercher</button>
+            </form>
           </div>
         </div>
       </div>
@@ -92,7 +96,7 @@
         <p class="card-text" id="Prix1">Prix : <strike>30€</strike></p>
       </div>
       <div class="col-md-6">
-        <p class="card-text" id="Prix2">20€</p>
+        <p class="card-text" id="Prix2">25€</p>
       </div>
     </div>
   </div>

@@ -229,5 +229,9 @@
 }
 
 #nameComment{
-	font-weight: bold; 
+	font-weight: bold;
+}
+
+#inscription{
+	color: white;
 }

@@ -49,7 +49,7 @@ Route::get('/mentionslgl', function () {
 Route::get('/shop', function () {
     return view('page/shop');
 });
-
+Route::get('/send', 'MailController@send')->name('send');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -57,10 +57,11 @@ Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
 Route::get('/home', 'HomeController@index')->name('connected');
 Route::get('/eventss/{id}', 'EventController@commenter')->name('commenter');
 Route::get('/contact', 'GestionController@contact')->name('contact');
-Route::get('/events/{id}', 'EventController@inscrire');
+//Route::get('/events/{id}', 'EventController@inscrire');
 
 Route::get('/futurevent','EventController@futurevent');
 Route::get('/pastevent','EventController@pastevent');
+Route::get('/send', 'MailController@send')->name('send');
 
 
 
@@ -87,9 +88,9 @@ Route::middleware(['salarie'])->group(function(){
 Route::middleware(['admin'])->group(function(){
 		Route::get('/event', 'EventController@index')->name('event');
 		Route::post('/event', 'EventController@create')->name('createEvent');
-        Route::get('/gestion', 'GestionController@index')->name('gestion');
-        Route::get('/delIdea/{id}', 'IdeaController@delIdea');
-				  Route::get('/idToEvent/{id}', 'IdeaController@idToEvent');
+    Route::get('/gestion', 'GestionController@index')->name('gestion');
+    Route::get('/delIdea/{id}', 'IdeaController@delIdea');
+		Route::get('/idToEvent/{id}', 'IdeaController@idToEvent');
   //  Route::get('/product', 'ProductController@index')->name("product");
   //  Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 });
