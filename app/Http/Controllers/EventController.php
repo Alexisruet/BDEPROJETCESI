@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use DB;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Model\Event;
 use App\Model\Picture;
@@ -34,7 +35,8 @@ class EventController extends Controller
             'title' => $request->get('title'),
             'description' => $request->get('description'),
             'category' => 'test',
-            'id_user' => $user
+            'id_user' => $user,
+            'date'=> '10/02/2000',
         ]);
 
 
@@ -76,16 +78,31 @@ class EventController extends Controller
            'id_event' => $id,
            'content' => $request->get('comment'),
        ]);
-       
+
        return redirect('/');
     }
 
-    public function showEvents(Request $request)
+    public function futurevent(){
+
+        $data['events'] = Event::where('date', '>=', Carbon::now())->get();
+        $data['pictures'] = Picture::all();
+        return view('page/event', $data);
+    }
+
+    public function pastevent(){
+
+        //$events = Event::where('date', '>=', Carbon::now())->get();
+        $data['events'] = Event::where('date', '<', Carbon::now())->get();
+        $data['pictures'] = Picture::all();
+        return view('page/event', $data);
+    }
+
+    /*public function showEvents(Request $request)
     {
         $data["events"] = Event::all();
         $data["pictures"] = Picture::all();
         return view('page/event', $data);
-    }
+    }*/
 
     /**
      * Store a newly created resource in storage.

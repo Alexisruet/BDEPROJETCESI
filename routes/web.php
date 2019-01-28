@@ -60,6 +60,10 @@ Route::get('/home', 'HomeController@index')->name('connected');
 Route::get('/contact', 'GestionController@contact')->name('contact');
 Route::get('/events/{id}', 'EventController@inscrire');
 
+Route::get('/futurevent','EventController@futurevent');
+Route::get('/pastevent','EventController@pastevent');
+
+
 
 Route::get('/product', 'ProductController@index')->name("product");
 Route::post('/addproduct', 'ProductController@create')->name('addproduct');
