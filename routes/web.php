@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('/home');
 });
 
-Route::get('/a', [
+Route::get('/shop', [
     'uses' => 'ProductController@showProducts',
     'as' => 'product.index'
 ]);
@@ -37,8 +37,8 @@ Route::get('/add-to-cart/{id}', [
     'as'=> 'product.addToCart'
 ]);
 
-Route::get('/magasin', function () {
-    return view('page/shoppps');
+Route::get('/shop', function () {
+    return view('page/shop');
 });
 
 
@@ -63,7 +63,7 @@ Route::get('/events/{id}', 'EventController@inscrire');
 
 Route::get('/product', 'ProductController@index')->name("product");
 Route::post('/addproduct', 'ProductController@create')->name('addproduct');
-Route::get('/magasin', 'ProductController@showProducts')->name('showProduct');
+Route::get('/shop', 'ProductController@showProducts')->name('showProduct');
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/idea', 'IdeaController@index')->name("idea");
@@ -72,7 +72,7 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/eventss', 'EventController@commenter')->name('commenter');
 
     //events/{{ $event -> id}}"
-   
+
 
 });
 
