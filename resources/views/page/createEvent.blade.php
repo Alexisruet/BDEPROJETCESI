@@ -24,12 +24,12 @@
 							</div>
 
 							<div class="input-field">
-								<label for="date">Date de l'événement </label>
-						<input type="text" name="date"id="date" >
+								<label for="date" class="desCI">Date de l'événement : </label>
+						<input type="text" name="date" class="form-control" placeholder="YYYY/MM/DD" required>
 							</div>
 							<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Valider</button>
 						</div>
-						
+
 			</form>
 			</div>
 		</div>
