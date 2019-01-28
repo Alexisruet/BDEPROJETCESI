@@ -3,7 +3,7 @@
 @section('main')
 
 <div class="container" id="shopie">
-	<h3>Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</h3>
+    <h3>Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</h3>
 
     @foreach($products as $product)
 
@@ -33,16 +33,18 @@
 
     @endforeach
 
-
-        <div class="col-md-4">
-            <a href="/send"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
-        </div>
-        <div class="col-md-4">
-            <label class="custom-control custom-checkbox">
-                <input class="custon-control-input" type="checkbox" name="cgv" required>
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">J'accepte les <a href="mentionslgl#cgv">Conditions générales de vente</a></span>
-            </label>
+    <form method="POST" action="https://www.paypal.me/jokerSanch" name="formCart">
+        <div class="row Cart">
+            <div class="col-md-4">
+                <a href="/send"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
+            </div>
+            <div class="col-md-4">
+                <label class="custom-control custom-checkbox">
+                    <input class="custon-control-input" type="checkbox" name="cgv" required>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">J'accepte les <a href="mentionslgl#cgv">Conditions générales de vente</a></span>
+                </label>
+            </div>
         </div>
     </form>
 </div>
