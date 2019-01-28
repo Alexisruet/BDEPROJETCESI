@@ -31,7 +31,7 @@ class IdeaController extends Controller
             'id_user' => $user
         ]);
 
-        return $this->showIdeas($request);
+        return redirect('/ideas');
     }
 
     public function showIdeas(Request $request)

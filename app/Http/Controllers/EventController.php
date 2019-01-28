@@ -39,17 +39,17 @@ class EventController extends Controller
 
 
         $file = $request->file('filename');
-        $file->move(public_path() . '/img', $file->getClientOriginalName());  
-        
+        $file->move(public_path() . '/img', $file->getClientOriginalName());
+
         Picture::create([
             'id_user'=> $user,
             'id_event' => $event->id,
             'url'=> $file->getClientOriginalName(),
-        
+
         ]);
 
-        return $this->showEvents($request);
-            
+        return redirect('/events');
+
     }
     public function inscrire(Request $request)
     {
@@ -74,7 +74,7 @@ class EventController extends Controller
            'id_event' => $ev->id,
            'content' => $request->get('comment'),
        ]);
-       
+
     }
 
     public function showEvents(Request $request)
