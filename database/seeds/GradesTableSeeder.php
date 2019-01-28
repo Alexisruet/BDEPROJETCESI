@@ -12,17 +12,14 @@ class GradesTableSeeder extends Seeder
     public function run()
     {
         DB::table('grades')->insert([
-            // 'id' => 1,
              'role' => 'Etudiant' ,  
          ]);
 
          DB::table('grades')->insert([
-            // 'id' => 1,
              'role' => 'Salarie' ,  
          ]);
 
          DB::table('grades')->insert([
-            // 'id' => 1,
              'role' => 'Admin' ,  
          ]);
     }
