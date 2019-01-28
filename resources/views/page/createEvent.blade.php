@@ -18,7 +18,7 @@
 								<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Décrire votre idée" name='description' form='form' required></textarea>
 							</div>
 							<div class="input-group control-group increment">
-								<label for="fichier" class="desCI" id="addPic">Ajouter une image :</label>
+								<label for="fichier" class="desCI" id="addPic">Ajouter une image : <p>Full HD recommandé</p> </label>
 
 								<input type="file" name="filename" class="form-control" id="fichier"></input>
 							</div>
