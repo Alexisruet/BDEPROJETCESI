@@ -84,7 +84,7 @@ class EventController extends Controller
            'content' => $request->get('content'),
        ]);
 
-       return redirect('/');
+       return redirect('/pastevent');
     }
 
     public function futurevent(){
