@@ -99,4 +99,10 @@ class ProductController extends Controller
         return view('page/shop', $data);
     }
 
+    public function research(Request $request){
+        $research = $request->search;
+                $event = Product::where('name', '=', $research)->get();
+                return view('shop', ['product'=>$product]);
+        }
+
 }
