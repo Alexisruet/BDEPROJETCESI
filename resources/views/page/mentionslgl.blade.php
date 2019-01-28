@@ -2,10 +2,10 @@
 
 @section('main')
 <div class="contain-lgl row" id="body2">
-	<div class="col-md-4 blue">
+	<div class="col-md-3 blue">
 
 	</div>
-	<div class="col-md-4" id="div-centre">
+	<div class="col-md-6" id="div-centre">
 <h3 class="title-lgl">Mentions Légales</h3>
 <p>Nom : BDE-CESI-BDX <br>
 	Adresse : https://www.bde-cesi-bdx.fr/</p>
@@ -160,12 +160,12 @@ d’une peine d’un an d’emprisonnement et de 15 000 EUR d’amende.
 					À défaut de résolution amiable, le litige sera porté devant le Tribunal de
 					commerce de Bordeaux.</p>
 					<p>Fait à Bordeaux, le 28/01/2019
-						par sanchez clément</p>
+						par SANCHEZ Clément</p>
  	</div>
 
 
 
-	<div class="col-md-4 blue">
+	<div class="col-md-3 blue">
 
 	</div>
 </div>
