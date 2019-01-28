@@ -20,7 +20,7 @@ class ProductController extends Controller
             $cart->add($product, $product->id);
             $request->session()->put('cart', $cart);
             return redirect()->route('product.index');
-        
+
     }
     public function getRemoveItem($id) {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
@@ -41,7 +41,7 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         return view('page/shopping-cart', ['products' => $cart->items]);
     }
-    
+
     public function index() {
 
         return view('addproduct');
@@ -53,21 +53,21 @@ class ProductController extends Controller
                 'filename' => 'required',
                 'filename.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
-        
+
         if($request->hasfile('filename'))
          {
             foreach($request->file('filename') as $image)
             {
                 $name=$image->getClientOriginalName();
-                $image->move(public_path().'/img', $name);  
+                $image->move(public_path().'/img', $name);
                 dd($image);
-                $data[] = $name;  
+                $data[] = $name;
             }
          }
          $image= new Image();
          $image->filename=json_encode($data);
-         
-        
+
+
         $image->save();
         return view('welcome');
     }
@@ -77,11 +77,11 @@ class ProductController extends Controller
 
           //  foreach($request->file('filename') as $product)
  //{
-    $file = $request->file('filename'); 
+    $file = $request->file('filename');
  $file->move(public_path() . '/img', $file->getClientOriginalName());
-    
 
-        
+
+
          Product::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
@@ -91,14 +91,12 @@ class ProductController extends Controller
 
         ]);
         return $this->showProducts($request);
-            
+
     }
     public function showProducts(Request $request)
     {
         $data["products"] = Product::all();
-        return view('page/shoppps', $data);
+        return view('page/shop', $data);
     }
 
 }
-
-

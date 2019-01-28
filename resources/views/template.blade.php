@@ -142,7 +142,7 @@
 
 						<!-- Links -->
 						<h5 class="text-uppercase" id="TitleFooter">
-							<a href="href=mentionslgl">Mentions légales</a>
+							<a href="mentionslgl">Mentions légales</a>
 						</h5>
 
 						<ul class="list-unstyled">

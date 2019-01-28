@@ -40,15 +40,11 @@
             </div>
         </div>
       </div>
-      <div class="col-md-1"> </div>
 
-      <div class="col-md-2">
-      <li>
-                    <a href="{{ route('product.shoppingCart') }}">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-                        <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
-                    </a>
-                </li>
+      <div class="col-md-2 navShop-item" id="basketShop">
+          <button type="button" class="btn btn-light" name="button" href="{{ route('product.shoppingCart') }}">
+            <img src="img/panier.png" alt="panier">Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}
+          </button>
       </div>
     </div>
   </div>
@@ -99,50 +95,22 @@
     </div>
   </div>
 
-
   <div class="col-md-10 shop">
     <div class="row shopCards">
-
+      @foreach ($products as $product)
       <div class="col-md-4 ">
         <div class="card shop-item">
-          <img class="card-img-top" src="img/pull1.png" alt="Card image cap">
+          <img class="card-img-top" src="img/{{ $product->urlImage }}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Item 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <h5 class="card-title">{{ $product->name }}</h5>
+            <p class="card-text">{{ $product->description }}</p>
+              <h4>Prix : {{ $product->price }} €</h4>
+              <h5>Stock : {{ $product->stock }}</h5>
+              <a href="{{ route('product.addToCart', ['id' => $product->id]) }}" class="btn btn-primary">Ajouter au panier</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card shop-item">
-          <img class="card-img-top" src="img/pull2.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Item 2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shop-item">
-          <img class="card-img-top" src="img/pull3.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Item 3</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shop-item">
-          <img class="card-img-top" src="img/sancho.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Item 4</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
 

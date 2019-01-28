@@ -1,38 +1,38 @@
+
 @extends('template')
 
 @section('main')
+	<div class="contain-cIdea row" id="bodyCI">
+		<div class="col-md-4">
 
-<div class="container">
+		</div>
+		<div class="col-md-3 col s6 push-s3" id="yopLaBoum">
+			<form action="{{ route('addproduct') }}" method='POST' id = 'form'  enctype="multipart/form-data">
+								{{csrf_field()}}
+				<div id="titreCI">
+					<label for="title">Nom du produit :</label>
+					<input class="form-control" type='text' name='name' id='name' required></input>
+				</div>
+				<div >
+					<div class="input-field">
+						<label for="exampleFormControlTextarea1" class="desCI" >Description du produit :</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1"  name='description' form='form' required></textarea>
+					</div>
+				</div>
         <div class="row">
-            <div class="col s6">
-                <form action="{{ route('addproduct') }}" method='POST' id = 'form' enctype="multipart/form-data">
-                {{csrf_field()}}
-                    <div class="col s6 push-s3">
-
-										<input placeholder="Nom du produit" class="center color-text" type='text' name='name' id='name' required></input>
-											<br>
-                                            <div class="input-field">
-                            <textarea placeholder="Description du produit" style="font-size: 20px;" name='description' form='form' required></textarea>
-                        </div>
-                        <input placeholder="Prix" class="center color-text" type='text' name='price' id='price' required></input>
-                        <input placeholder="Stock" class="center color-text" type='text' name='stock' id='stock' required></input>
-                        </div>
-                        <div class="input-group control-group increment" >
-          <input type="file" name="filename" class="form-control">
-          
-            
+          <div class="col-md-4" id="titreCI">
+            <label for="title">Prix :</label>
+            <input class="form-control" type='text' name='price' id='price' required></input>
           </div>
-                        
-
-
-
-
-									
-                        <button class="waves-effect waves-light btn" type='submit'>Valider</button>
-                    </div>
-                </form>
-            </div>
+          <div class="col-md-2" id="titreCI"></div>
+          <div class="col-md-4" id="titreCI">
+            <label for="title">Stock :</label>
+            <input class="form-control" type='text' name='stock' id='stock' required></input>
+          </div>
         </div>
-    </div>
-
+          <input type="file" name="filename">
+      	<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Valider</button>
+		</form>
+		</div>
+	</div>
 @endsection
