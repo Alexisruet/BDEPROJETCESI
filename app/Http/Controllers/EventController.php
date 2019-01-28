@@ -70,15 +70,19 @@ class EventController extends Controller
 
     }
 
-    public function commenter(Request $request, $id)
+    public function commenter(Request $request)
     {
+
         $user = $request->user()->id;
        // $ev = DB::table('events')->where('id_user', '=', $user)->first();
+           // $test->content = $request->content;
+      // $test = $request-> get('content');
+      // dd($test);
 
         ToComment::create([
            'id_user' => $user,
-           'id_event' => $id,
-           'content' => $request->get('comment'),
+           'id_event' => 1,
+           'content' => $request->get('content'),
        ]);
 
        return redirect('/');
@@ -88,6 +92,7 @@ class EventController extends Controller
 
         $data['events'] = Event::where('date', '>=', Carbon::now())->get();
         $data['pictures'] = Picture::all();
+        
         return view('page/futurevent', $data);
     }
 
@@ -96,6 +101,7 @@ class EventController extends Controller
         //$events = Event::where('date', '>=', Carbon::now())->get();
         $data['events'] = Event::where('date', '<', Carbon::now())->get();
         $data['pictures'] = Picture::all();
+        $data['To_comments'] = ToComment::all();
         return view('page/event', $data);
     }
 
