@@ -222,3 +222,12 @@
 	margin-bottom: 250px;
 	margin-top: 250px;
 }
+
+.commentary{
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+#nameComment{
+	font-weight: bold; 
+}
