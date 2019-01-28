@@ -22,7 +22,9 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-2">
-          <button><i class="fas fa-times"></i>&nbspSupprimer</button>
+          <a href="{{ route('product.remove', ['id' => $product['item']['id']]) }}">
+            <button><i class="fas fa-times"></i>&nbspSupprimer</button>
+          </a>
         </div>
 
       </div>
