@@ -13,14 +13,13 @@
                 </a>
 				</div>
 				<div>
-				@foreach($pictures as $picture)
-            @if($picture->id_event == $event->id)
-                            <div class="imgWei">
-                                <img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
-                            </div>
-                        @endif
+                @foreach($pictures as $picture)
+          	@if($picture->id_event == $event->id)
+							<div class="imgWei">
+								<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
+							</div>
+						@endif
           @endforeach
-
         </div>
 		<div>
 					
@@ -37,18 +36,5 @@
 
 
 			</div>
-
-		@endforeach
-
-	</div>
-	<!-- if you are admin-->
-	<?php 
-		$user = Auth::user()->id_grade;
-	?>
-	@if($user == 3)
-		<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
-			Add event
-		</button></a>
-	@endif
-</div>
-@endsection
+            @endforeach
+            @endsection

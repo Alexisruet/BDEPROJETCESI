@@ -18,6 +18,7 @@ class Events extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('category');    
+            $table->date('date'); 
     });
     }
 

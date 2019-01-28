@@ -32,7 +32,7 @@
   </ul>
 
 @endforeach
-
+<button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button>
 </div>
 
 @endsection

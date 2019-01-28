@@ -34,13 +34,22 @@
 						<ul class="navbar-nav ml-auto">
 
 
+							<div class="dropdown">
+								<li class="nav-item dropdown ">
+									<a id="navbarDropdownEve" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										ÉVÉNEMENT <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="events" >
+											Passés
+										</a>
+										<a class="dropdown-item" href="futurevent" >
+											À venir
+										</a>
+									</ul>
+									</li>
+								</div>
 
-						
-
-				
-								<li class="nav-item">
-									<a class="nav-link js-scroll-trigger" href="events">ÉVÉNEMENTS</a>
-								</li>
 								<li class="nav-item">
 									<a class="nav-link js-scroll-trigger" href="ideas">BOÎTE À IDÉES </a>
 								</li>

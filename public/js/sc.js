@@ -2,6 +2,10 @@ jQuery('#navbarDropdown').click(function() {
     jQuery(this).next('.dropdown-menu').toggle()
 })
 
+jQuery('#navbarDropdownEve').click(function() {
+    jQuery(this).next('.dropdown-menu').toggle()
+})
+
 jQuery('#shopDropdown').click(function() {
     jQuery(this).next('.dropdown-menu').toggle()
 })
