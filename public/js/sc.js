@@ -25,3 +25,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
       '[J\'accepte]', '[En savoir plus]', 'mentionslgl');
 
   });
+
+function like(){
+
+	var hearth = document.getElementById('hearth');
+	if (hearth.src === "http://127.0.0.1:8000/img/like.png") {
+		hearth.src = "img/likeRed.png";
+		console.log("yop");
+	} else {
+		hearth.src = "img/like.png";
+	}
+}
