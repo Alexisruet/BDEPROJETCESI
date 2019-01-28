@@ -42,7 +42,7 @@
       </div>
 
       <div class="col-md-2 navShop-item" id="basketShop">
-          <button type="button" class="btn btn-light" name="button" href="{{ route('product.shoppingCart') }}">
+          <button type="button" class="btn btn-light" name="button" href="shopping-cart">
             <img src="img/panier.png" alt="panier">Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}
           </button>
       </div>
