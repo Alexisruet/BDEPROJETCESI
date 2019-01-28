@@ -9,6 +9,8 @@
 				<div class="card-body">
 					<h3>{{ $event->title }}</h3>
 					<p>{{ $event->description }}</p>
+					
+                </a>
 				</div>
 				<div>
           @foreach($pictures as $picture)
@@ -18,13 +20,11 @@
 							</div>
 						@endif
           @endforeach
-          <form action="{{ route('inscrire') }}" method='POST' id = 'form' enctype="multipart/form-data">
-            {{csrf_field()}}
-            <a href="/events/{{ $event -> id}}">
-            <button type="submit" class="btn link btn-dark" id="inscription">Pour s'inscrire</button>
-                </a>
-          </form>
         </div>
+		<div>
+					<a href="/events/{{ $event -> id}}">
+            		<button type="submit" class="btn link btn-dark" id="inscription">Pour s'inscrire</button>
+					</div>
 
 				<form action="{{ route('commenter') }}" method='POST' id='gg' enctype="multipart/form-data">
 					{{csrf_field()}}

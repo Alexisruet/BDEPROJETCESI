@@ -77,14 +77,12 @@ Route::middleware(['auth'])->group(function(){
 });
 
 Route::middleware(['salarie'])->group(function(){
-    Route::get('/report', 'ReportController@index')->name('report');
 });
 
 Route::middleware(['admin'])->group(function(){
 		Route::get('/event', 'EventController@index')->name('event');
 		Route::post('/event', 'EventController@create')->name('createEvent');
-    Route::get('/report', 'ReportController@indexAdmin')->name('report');
-    Route::get('/gestion', 'GestionController@index')->name('gestion');
+        Route::get('/gestion', 'GestionController@index')->name('gestion');
   //  Route::get('/product', 'ProductController@index')->name("product");
   //  Route::post('/addproduct', 'ProductController@create')->name('addproduct');
 });
