@@ -22,6 +22,15 @@
 				</div>
 			</div>
 			<div class="col-md-1"></div>
+
 			@endforeach
+			<?php
+				$user = Auth::user()->id_grade;
+			?>
+			@if($user == 3)
+				<a href="/event"><button type="button" class="btn btn-light" id="createEvent" >
+					Add event
+				</button></a>
+			@endif
 	</div>
 	@endsection
