@@ -40,15 +40,13 @@
             </div>
         </div>
       </div>
-      <div class="col-md-1"> </div>
 
       <div class="col-md-2">
-      <li>
-                    <a href="{{ route('product.shoppingCart') }}">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-                        <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
-                    </a>
-                </li>
+        <div class="col-md-2 navShop-item" id="basketShop">
+            <button type="button" class="btn btn-light" name="button" href="{{ route('product.shoppingCart') }}">
+              <img src="img/panier.png" alt="panier">Panier {{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}
+            </button>
+        </div>
       </div>
     </div>
   </div>
