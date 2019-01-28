@@ -32,9 +32,10 @@
     </ul>
 
     @endforeach
-    <form class="form-group row" action="https://www.paypal.me/jokerSanch">
+								
+   
         <div class="col-md-4">
-            <a href="https://www.paypal.me/jokerSanch"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
+            <a href="/send"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
         </div>
         <div class="col-md-4">
             <label class="custom-control custom-checkbox">
@@ -43,7 +44,11 @@
                 <span class="custom-control-description">J'accepte les <a href="mentionslgl#cgv">Conditions générales de vente</a></span>
             </label>
         </div>
+<<<<<<< HEAD
     </form>
+=======
+    
+>>>>>>> 6de90f5b4081e592c22b1f099e897fa17dd7fed3
 </div>
 
 
