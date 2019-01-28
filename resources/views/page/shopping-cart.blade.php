@@ -33,7 +33,7 @@
 
     @endforeach
 
-    <form method="POST" action="https://www.paypal.me/jokerSanch" name="formCart">
+    
         <div class="row Cart">
             <div class="col-md-4">
                 <a href="/send"><button class="waves-effect waves-light btn" id="ideaValidate" type='submit'>Commander</button></a>
@@ -46,7 +46,6 @@
                 </label>
             </div>
         </div>
-    </form>
 </div>
 
 
