@@ -19,9 +19,11 @@
 								<img class="card-img-top d-block" src="img/{{ $picture->url }}" height="250" width="100" alt="photo de l'event">
 							</div>
 						@endif
-          @endforeach
-        </div>
+						</div>
 		<div>
+			
+						@endforeach
+        
 					
             		<button type="submit" class="btn link btn-dark" id="inscription"><a href="/events/{{ $event -> id}}">Pour s'inscrire</a></button>
 					</div>

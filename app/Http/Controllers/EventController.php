@@ -36,7 +36,9 @@ class EventController extends Controller
             'description' => $request->get('description'),
             'category' => 'test',
             'id_user' => $user,
-            'date'=> '10/02/2000',
+            'date'=> $request->get('date'),
+            //'date'=> '2022/10/10',
+
         ]);
 
 
@@ -50,7 +52,7 @@ class EventController extends Controller
 
         ]);
 
-        return redirect('/events');
+        return redirect('/futurevent');
 
     }
     public function inscrire(Request $request, $id)
