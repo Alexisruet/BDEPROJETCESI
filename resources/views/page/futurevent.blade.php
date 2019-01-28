@@ -26,9 +26,10 @@
 				</div>
 				@endif
 				@endforeach
-				<button type="submit" class="btn link btn-dark" id="inscription">
-					<a href="/events/{{ $event -> id}}">Pour s'inscrire</a>
-				</button>
+				<a href="/events/{{ $event -> id}}">
+					<button type="submit" class="btn link btn-dark" id="inscription">
+					Pour s'inscrire
+				</button></a>
 			</div>
 		</div>
 		<div class="col-md-1"></div>
