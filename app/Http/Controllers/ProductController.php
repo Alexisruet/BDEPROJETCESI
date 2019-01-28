@@ -90,7 +90,7 @@ class ProductController extends Controller
             'urlImage'=> $file->getClientOriginalName(),
 
         ]);
-        return $this->showProducts($request);
+        return redirect('/shop');
 
     }
     public function showProducts(Request $request)
