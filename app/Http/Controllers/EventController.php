@@ -66,17 +66,18 @@ class EventController extends Controller
 
     }
 
-    public function commenter(Request $request)
+    public function commenter(Request $request, $id)
     {
         $user = $request->user()->id;
-        $ev = DB::table('events')->where('id_user', '=', $user)->first();
+       // $ev = DB::table('events')->where('id_user', '=', $user)->first();
 
         ToComment::create([
            'id_user' => $user,
-           'id_event' => $ev->id,
+           'id_event' => $id,
            'content' => $request->get('comment'),
        ]);
-
+       
+       return redirect('/');
     }
 
     public function showEvents(Request $request)
