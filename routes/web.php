@@ -55,7 +55,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ideas', 'IdeaController@showIdeas')->name('showIdea');
 Route::get('/home', 'HomeController@index')->name('connected');
-// Route::post('/eventss', 'EventController@commenter')->name('commenter');
+Route::get('/eventss/{id}', 'EventController@commenter')->name('commenter');
 Route::get('/contact', 'GestionController@contact')->name('contact');
 Route::get('/events/{id}', 'EventController@inscrire');
 

@@ -22,13 +22,22 @@
           @endforeach
 
         </div>
-		
+		@foreach($To_comments as $ToComment)
+		<?php
+						$idUser = $ToComment->id_user;
+            $name = DB::table('users')->whereId($idUser)->first();
+					?>
+						          <h5>{{ $name->name }} {{ $name->surname }} </h5>
 
+		<p>{{ $ToComment->content }}</p>
+		@endforeach
 				<form action="{{ route('commenter') }}" method='POST' id='gg' enctype="multipart/form-data">
 					{{csrf_field()}}
-					<p><input placeholder="Commentaire" class="form-control center color-text" type='text' name='comment' id='comment' required></input></p>
+					<p><input placeholder="Commentaire" class="form-control center color-text" type='text' name='content' id='content' required></input></p>
+
 					<button type="submit" class="btn link btn-dark" id="commente">Commenter</button>
 				</form>
+				
 			</div>
 			<div class="col-md-1">
 
