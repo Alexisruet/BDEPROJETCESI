@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'surname', 'email', 'password', 'id_grade', 'id_centre'
     ];
 
     /**
@@ -27,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function Salarie() {
+        return $this->id_grade == 2;
+    }
+
+    public function Admin() {
+    return $this->id_grade == 3;
+    }
 }
